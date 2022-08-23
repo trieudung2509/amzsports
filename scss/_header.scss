@@ -1,0 +1,87 @@
+@charset "utf-8";
+@import "variables";
+@import "mixins";
+
+/* -----------------------------------------------------------
+	.main-header
+----------------------------------------------------------- */
+@mixin button-header {
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 0px;
+}
+
+@mixin style-font($size, $color, $weight) {
+	font-size: $size;
+	color: $color;
+	font-weight: $weight;
+}
+
+.main-header {
+	background: url('../images/header-bg.png') no-repeat;
+	background-size: cover;
+  background-position: 60% 100%;
+	.navbar-top {
+		.navbar-logo {
+			img {
+				width: 70%;
+			}
+		}
+	}
+
+	.header-right-button {
+		.main-nav {
+			display: flex;
+			list-style: none;
+			margin-bottom: 0px;
+			.time-zone {
+				display: flex;
+				align-items: center;
+				margin-right: 15px;
+				@include style-font(14px, #fff, 400);
+				position: relative;
+				.dropdown-toggle {
+					color: #fff;
+				}
+			}
+			button.btn-login {
+				@include button-header;
+				color: #007649;
+				background: #FFFFFF;
+				padding: 7px 9px;
+			}
+			button.btn-logup {
+				@include button-header;
+				border: 2px solid #fff;
+				margin-left: 10px;
+				color: #fff;
+				padding: 6px 8px;
+			}
+		}
+	}
+	.navbar-menu {
+		padding-bottom: 0px;
+		padding-top: 20px;
+		li.nav-item {
+			padding: 10px 0px 5px 15px;
+			&.active {
+				background: #FFFFFF;
+				color: $primary;
+				border-radius: 0px;
+				a.nav-link {
+					@include style-font(16px, $primary, 500);
+				}
+			}
+			a.nav-link {
+				@include style-font(16px, #fff, 500);
+				line-height: 24px;
+				padding: 0px;
+				img {
+					width: 20%;
+					margin-right: 10px;
+				}
+			}
+
+		}
+	}
+}
