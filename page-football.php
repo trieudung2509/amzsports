@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="foot-table">
+            <div class="foot-table-desktop">
                 <ul class="foot-ul">
                     <li>
                     		<table class="table">
@@ -365,6 +365,460 @@
                     </li>
                 </ul>
             </div>
+						<div class="foot-table-mobile">
+								<div class="item-match-mb">
+										<h5>Sunday 14th August 2022</h5>
+										<ul class="foot-mb">
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span>Finished</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span>Finished</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span>Finished</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span>Finished</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span class="upcoming">Upcoming</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span class="live">Live</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+									  </ul>
+								</div>
+								<div class="item-match-mb">
+										<h5>Sunday 14th August 2022</h5>
+										<ul class="foot-mb">
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span>Finished</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span>Finished</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span>Finished</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span>Finished</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span class="upcoming">Upcoming</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span class="live">Live</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+									  </ul>
+								</div>
+								<div class="item-match-mb">
+										<h5>Sunday 14th August 2022</h5>
+										<ul class="foot-mb">
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span>Finished</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span>Finished</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span>Finished</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span>Finished</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span class="upcoming">Upcoming</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span class="live">Live</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+									  </ul>
+								</div>
+								<div class="item-match-mb">
+										<h5>Sunday 14th August 2022</h5>
+										<ul class="foot-mb">
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span>Finished</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span>Finished</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span>Finished</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span>Finished</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span class="upcoming">Upcoming</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+											<li>
+													<div class="foot-item">
+															<h6>02:00 <span class="live">Live</span>Premier League</h6>
+															<div class="item-confrontation">
+																	<div class="bottom-premier-item">
+																		<span>Liverpool</span>
+																			<img src="/images/mu.png" alt="">
+																	</div>
+																	<div class="item-score">
+																			<span>5 : 0</span>
+																	</div>
+																	<div class="bottom-premier-item-1">
+																			<img src="/images/mu.png" alt="">
+																			<span>Liverpool</span>
+																	</div>
+															</div>
+													</div>
+											</li>
+									  </ul>
+								</div>
+						</div>
         </div>
     </div>
 

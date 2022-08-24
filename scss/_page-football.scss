@@ -7,9 +7,13 @@
     align-items: center;
     @include style-font(24px, #1A202C, 500);
     line-height: 36px;
+    @include mq(max_xs) {
+      @include style-font(20px, #1A202C, 500);
+      line-height: 30px;
+    }
     img {
       width: 10%;
-      margin-right: 10px;
+      margin-right: 15px;
     }
   }
 
@@ -20,10 +24,17 @@
     @include style-font(16px, #1A202C, 400);
     line-height: 24px;
     margin-bottom: 0;
+    @include mq(max_xs) {
+      @include style-font(14px, #1A202C, 400);
+      line-height: 21px;
+    }
   }
 }
 
-.foot-table {
+.foot-table-desktop {
+  @include mq(max_xs) {
+    display: none;
+  }
   ul.foot-ul {
     padding-left: 0px;
     list-style: none;
@@ -112,5 +123,112 @@
       }
     }
 
+  }
+}
+
+.foot-table-mobile {
+  display: none;
+  @include mq(max_xs) {
+    display: block;
+  }
+  .item-match-mb {
+    h5 {
+      @include style-font(14px, #1A202C, 600);
+      line-height: 21px;
+      border-bottom: 1px solid #EDF2F7;
+      padding-bottom: 15px;
+      margin-top: 35px;
+    }
+    ul.foot-mb {
+      list-style: none;
+      padding-left: 0px;
+      li {
+        border-bottom: 1px solid #EDF2F7;
+        padding: 5px 0px;
+        .foot-item {
+          h6 {
+            @include style-font(12px, #1A202C, 400);
+            line-height: 12px;
+            display: inline-block;
+            span {
+              margin: 0px 25px;
+              position: relative;
+              &.live {
+                @include style-font(12px,#007649, 600);
+                line-height: 18px;
+                &::before {
+                  top: 1px;
+                }
+                &::after {
+                  top: 1px;
+                }
+              }
+              &.upcoming {
+                @include style-font(12px,#007649, 400);
+                line-height: 18px;
+              }
+              &::before {
+                content: "\f111";
+                font-family: "Font Awesome 5 Pro";
+                font-size: 7px;
+                left: -15px;
+                display: inline-block;
+                position: absolute;
+                color: #718096;
+                font-weight: 900;
+              }
+              &::after {
+                content: "\f111";
+                font-family: "Font Awesome 5 Pro";
+                font-size: 7px;
+                right: -15px;
+                top: 1px;
+                display: inline-block;
+                position: absolute;
+                color: #718096;
+                font-weight: 900;
+              }
+            }
+          }
+          .item-confrontation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 0px;
+            .bottom-premier-item {
+              display: flex;
+              align-items: center;
+              img {
+                width: 20%;
+                margin-left: 10px;
+              }
+              span {
+                @include style-font(14px, #1A202C, 400);
+                line-height: 21px;
+              }
+            }
+            .item-score {
+              margin-right: 25px;
+              span {
+                @include style-font(14px, #1A202C, 600);
+                line-height: 21px;
+              }
+            }
+            .bottom-premier-item-1 {
+              display: flex;
+              align-items: center;
+              img {
+                width: 20%;
+                margin-right: 10px;
+              }
+              span {
+                @include style-font(14px, #1A202C, 400);
+                line-height: 21px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
