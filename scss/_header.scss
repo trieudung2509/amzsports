@@ -43,6 +43,9 @@
 				.dropdown-toggle {
 					color: #fff;
 				}
+				@include mq(max_xs) {
+					display: none;
+				}
 			}
 			button.btn-login {
 				@include button-header;
@@ -62,6 +65,11 @@
 	.navbar-menu {
 		padding-bottom: 0px;
 		padding-top: 20px;
+		.navbar-nav {
+			@include mq(max_xs) {
+				flex-direction: row;
+			}
+		}
 		li.nav-item {
 			padding: 10px 0px 5px 15px;
 			&.active {
