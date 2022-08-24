@@ -15,6 +15,8 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/home-2.css">
 		<link rel="stylesheet" type="text/css" href="css/news.css">
+		<link rel="stylesheet" type="text/css" href="css/news-detail.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file://-->

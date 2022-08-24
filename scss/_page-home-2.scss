@@ -128,7 +128,11 @@
 }
 
 .news-wrapper {
-  padding: 80px 0px 90px 0px;
+  padding-top: 80px;
+
+  @include mq(max_md) {
+    padding-top: 44px;
+  }
 
   .title {
     font-style: normal;
@@ -162,6 +166,8 @@
     margin-bottom: 100px;
     position: relative;
     cursor: pointer;
+    display: block;
+    text-decoration: none;
 
     @include mq(max_md) {
       width: 100%;
@@ -193,6 +199,10 @@
         font-size: 14px;
         line-height: 21px;
         color: #718096;
+        @include mq(max_md) {
+          font-size: 12px;
+          line-height: 18px;
+        }
       }
 
       .news-title {
@@ -210,6 +220,10 @@
         overflow: hidden;
         text-overflow: ellipsis;
         margin: 4px 0px;
+        @include mq(max_md) {
+          font-size: 16px;
+          line-height: 24px;
+        }
       }
 
       .time {
@@ -218,6 +232,11 @@
         font-size: 14px;
         line-height: 21px;
         color: #718096;
+
+        @include mq(max_md) {
+          font-size: 12px;
+          line-height: 18px;
+        }
       }
     }
   }

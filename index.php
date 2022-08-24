@@ -2403,54 +2403,54 @@
 			<div class="container">
 				<h3 class="title">News</h3>
 				<div class="list-news">
-					<div class="news-item">
+					<a class="news-item" href="news-detail.php">
 						<img src="./images/news-image.png" alt="" class="news-image" />
 						<div class="news-info">
 							<span class="league-name">Premier League</span>
 							<h3 class="news-title">City hit four to see off bournemouth and make it two from two dngid kd gnfdhigfn knfid</h3>
 							<span class="time">10 hours ago</span>
 						</div>
-					</div>
-					<div class="news-item">
+					</a>
+					<a class="news-item" href="news-detail.php">
 						<img src="./images/news-image-2.png" alt="" class="news-image" />
 						<div class="news-info">
 							<span class="league-name">Premier League</span>
 							<h3 class="news-title">City hit four to see off bournemouth and make it two from two dngid kd gnfdhigfn knfid</h3>
 							<span class="time">10 hours ago</span>
 						</div>
-					</div>
-					<div class="news-item">
+					</a>
+					<a class="news-item" href="news-detail.php">
 						<img src="./images/news-image-3.png" alt="" class="news-image" />
 						<div class="news-info">
 							<span class="league-name">Premier League</span>
 							<h3 class="news-title">City hit four to see off bournemouth and make it two from two dngid kd gnfdhigfn knfid</h3>
 							<span class="time">10 hours ago</span>
 						</div>
-					</div>
-					<div class="news-item">
+					</a>
+					<a class="news-item" href="news-detail.php">
 						<img src="./images/news-image-4.png" alt="" class="news-image" />
 						<div class="news-info">
 							<span class="league-name">Premier League</span>
 							<h3 class="news-title">City hit four to see off bournemouth and make it two from two dngid kd gnfdhigfn knfid</h3>
 							<span class="time">10 hours ago</span>
 						</div>
-					</div>
-					<div class="news-item">
+					</a>
+					<a class="news-item" href="news-detail.php">
 						<img src="./images/news-image-5.png" alt="" class="news-image" />
 						<div class="news-info">
 							<span class="league-name">Premier League</span>
 							<h3 class="news-title">City hit four to see off bournemouth and make it two from two dngid kd gnfdhigfn knfid</h3>
 							<span class="time">10 hours ago</span>
 						</div>
-					</div>
-					<div class="news-item">
+					</a>
+					<a class="news-item" href="news-detail.php">
 						<img src="./images/news-image-6.png" alt="" class="news-image" />
 						<div class="news-info">
 							<span class="league-name">Premier League</span>
 							<h3 class="news-title">City hit four to see off bournemouth and make it two from two dngid kd gnfdhigfn knfid</h3>
 							<span class="time">10 hours ago</span>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="view-more-block">
