@@ -38,6 +38,115 @@
 						<a class="nav-link" aria-current="page" href="#">
 								<img src="../images/football.png" alt=""> <span>Football</span>
 						</a>
+						<div class="children-menu">
+							<a href="" class="header-chil">View all football <i class="far fa-arrow-right"></i></a>
+							<div class="row">
+									<div class="col-12 col-md-3 chilren-item">
+										<h5>British</h5>
+										<ul class="menu-chil-1">
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+										</ul>
+									</div>
+									<div class="col-12 col-md-3 chilren-item">
+										<h5>British</h5>
+										<ul class="menu-chil-1">
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+										</ul>
+									</div>
+									<div class="col-12 col-md-3 chilren-item">
+										<h5>British</h5>
+										<ul class="menu-chil-1">
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+										</ul>
+									</div>
+									<div class="col-12 col-md-3 chilren-item">
+										<h5>British</h5>
+										<ul class="menu-chil-1">
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+												<li>
+														<a href="#">English Football on TV</a>
+												</li>
+										</ul>
+									</div>
+							</div>
+						</div>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" aria-current="page" href="#">
