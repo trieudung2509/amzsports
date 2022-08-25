@@ -20,7 +20,7 @@
 						</div>
 					</li>
 					<li>
-						<a href="#">
+						<a href="page-login.php">
 							<button type="button" class="btn btn-login">Log in</button>
 						</a>
 					</li>
