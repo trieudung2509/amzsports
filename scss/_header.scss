@@ -77,9 +77,9 @@
 	.navbar-menu {
 		padding-bottom: 0px;
 		padding-top: 20px;
-		// @include mq(max_xs) {
-		// 	overflow: scroll;
-		// }
+		@include mq(max_xs) {
+			overflow: scroll;
+		}
 		.navbar-nav {
 			position: relative;
 			flex-direction: row;
@@ -94,16 +94,17 @@
 				width: 160px;
 			}
 			&:hover {
-				.children-menu {
-					display: block;
-				}
-			}
-			&.active {
 				background: #FFFFFF;
 				color: $primary;
 				border-radius: 0px;
 				a.nav-link {
 					@include style-font(16px, $primary, 500);
+				}
+				.children-menu {
+					display: block;
+					@include mq(max_xs) {
+						display: none;
+					}
 				}
 			}
 			a.nav-link {
@@ -126,7 +127,7 @@
 				display: none;
 				box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.1);
 				@include mq(max_xs) {
-          left: -15px;
+          display: none;
         }
 				a.header-chil {
 					@include style-font(14px, #007649, 400);
@@ -156,6 +157,64 @@
 								&:hover {
 									color: #007649;
 								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.menu-block {
+		position: relative;
+		@include mq(max_xs) {
+			padding-left: 0;
+		}
+	}
+	.block-sub-menu {
+		.children-menu {
+			display: none;
+			&.active {
+				display: block;
+			}
+			position: absolute;
+			top: 100%;
+			left: 0;
+			background: #fff;
+			width: 100%;
+			z-index: 99;
+			padding: 20px 0px 20px 15px;
+			display: none;
+			box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.1);
+			@include mq(max_xs) {
+				left: -0px;
+			}
+			a.header-chil {
+				@include style-font(14px, #007649, 400);
+				line-height: 31px;
+				text-decoration: none;
+				margin-bottom: 10px;
+				display: block;
+				i {
+					margin-left: 5px;
+				}
+			}
+			.chilren-item {
+				h5 {
+					@include style-font(18px, #1A202C, 600);
+					line-height: 31px;
+					margin-bottom: 5px;
+				}
+				ul.menu-chil-1 {
+					list-style: none;
+					padding-left: 0px;
+					li {
+						margin-bottom: 5px;
+						a {
+							@include style-font(14px, #1A202C, 400);
+							line-height: 31px;
+							text-decoration: none;
+							&:hover {
+								color: #007649;
 							}
 						}
 					}
