@@ -118,6 +118,7 @@
           @include style-font(14px, #1A202C, 500);
           line-height: 21px;
           margin-right: 20px;
+          min-width: max-content;
           &.active {
             background: #AACC00;
             position: relative;
