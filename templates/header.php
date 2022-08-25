@@ -294,7 +294,7 @@
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="#">
+								<a class="nav-link" aria-current="page" href="../news.php">
 										<img src="../images/news.png" alt="">  <span>News</span>
 								</a>
 							</li>
