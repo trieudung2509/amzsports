@@ -70,42 +70,42 @@
             </div>
         </div>
         <div class="row" style="padding: 10px 0px">
-            <div class="col-md-2 col-match">
+            <div class="col-md-2 col-6 col-match">
                 <div class="list-guide">
                     <img src="/images/clock.png" alt="">
                     <h6>Sunday, 14/08/2022 00:00</h6>
                     <p>Match day (GMT+7)</p>
                 </div>
             </div>
-            <div class="col-md-2 col-match">
+            <div class="col-md-2 col-6 col-match">
                 <div class="list-guide">
                     <img src="/images/whistle.png" alt="">
                     <h6>David Gálvez</h6>
                     <p>Referee</p>
                 </div>
             </div>
-            <div class="col-md-2 col-match">
+            <div class="col-md-2 col-6 col-match">
                 <div class="list-guide">
                     <img src="/images/soccer-field.png" alt="">
                     <h6>Regular Season - 1</h6>
                     <p>Round</p>
                 </div>
             </div>
-            <div class="col-md-2 col-match">
+            <div class="col-md-2 col-6 col-match">
                 <div class="list-guide">
                     <img src="/images/calendar-2.png" alt="">
                     <h6>2022</h6>
                     <p>Season</p>
                 </div>
             </div>
-            <div class="col-md-2 col-match">
+            <div class="col-md-2 col-6 col-match">
                 <div class="list-guide">
                     <img src="/images/stadium.png" alt="">
                     <h6>Estadio Municipal de Anduva</h6>
                     <p>Stadium</p>
                 </div>
             </div>
-            <div class="col-md-2 col-match">
+            <div class="col-md-2 col-6 col-match">
                 <div class="list-guide">
                     <img src="/images/new-construction.png" alt="">
                     <h6>Miranda de Ebro</h6>
@@ -141,12 +141,7 @@
                           </div>
                         </td>
                         <td>
-                          <span>
-                            Total Wins
-                          </span>
-                        </td>
-                        <td>
-                          <span>
+                          <span class="text-left">
                             Total Wins
                           </span>
                         </td>
@@ -170,16 +165,11 @@
                         </td>
                         <td>
                           <span>
-                            Total Wins
+                            Home
                           </span>
                         </td>
                         <td>
-                          <span>
-                            Total Wins
-                          </span>
-                        </td>
-                        <td>
-                          <span>
+                          <span class="text-left">
                             Total Wins
                           </span>
                         </td>
@@ -203,16 +193,11 @@
                         </td>
                         <td>
                           <span>
-                            Total Wins
+                            Away
                           </span>
                         </td>
                         <td>
-                          <span>
-                            Total Wins
-                          </span>
-                        </td>
-                        <td>
-                          <span>
+                          <span class="text-left">
                             Total Wins
                           </span>
                         </td>
@@ -228,12 +213,95 @@
                     </tbody>
                   </table>
               </div>
+              <div class="block-head-mobile">
+                  <div class="head-scord">
+                      <p>Played</p>
+                      <h6>28</h6>
+                      <p>Draws: 9</p>
+                  </div>
+                  <div class="scord-info">
+                  <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                        Man United
+                      </button>
+                      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                      Chelsea
+                      </button>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <ul class="info-sc">
+                          <li>
+                              <div class="record-sc">
+                                  <p>Total Wins</p>
+                                  <span>11</span>
+                                  <div class="sc-width">
+                                      <div class="load" style="width: 30%"></div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="record-sc">
+                                  <p>Total Wins</p>
+                                  <span>11</span>
+                                  <div class="sc-width">
+                                      <div class="load" style="width: 10%" ></div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="record-sc">
+                                  <p>Total Wins</p>
+                                  <span>11</span>
+                                  <div class="sc-width">
+                                      <div class="load" style="width: 20%"></div>
+                                  </div>
+                              </div>
+                          </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <ul class="info-sc">
+                          <li>
+                              <div class="record-sc">
+                                  <p>Total Wins</p>
+                                  <span>11</span>
+                                  <div class="sc-width">
+                                      <div class="load" style="width: 30%"></div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="record-sc">
+                                  <p>Total Wins</p>
+                                  <span>11</span>
+                                  <div class="sc-width">
+                                      <div class="load" style="width: 10%" ></div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="record-sc">
+                                  <p>Total Wins</p>
+                                  <span>11</span>
+                                  <div class="sc-width">
+                                      <div class="load" style="width: 20%"></div>
+                                  </div>
+                              </div>
+                          </li>
+                        </ul>
+                    </div>
+                  </div>
+                  </div>
+              </div>
           </div>
         </div>
         <div class="row">
           <div class="recent-meeting">
             <h4>Recent Meetings</h4>
-              <table class="table">
+              <table class="table table-destop">
                 <tbody class="tbody-match">
                   <tr>
                     <td>
@@ -325,6 +393,64 @@
                   </tr>
                 </tbody>
               </table>
+            <div class="recent-mobile">
+                <ul class="meeting-list">
+                    <li>
+                      <div class="meeting-item">
+                          <h6>Saturday 15 May 2004</h6>
+                          <div class="meeting-scord">
+                              <div class="bottom-premier-item">
+                                <span>Liverpool</span>
+                                  <img src="/images/mu.png" alt="">
+                              </div>
+                              <div class="scord">
+                                <span>5</span> : <span>0</span>
+                              </div>
+                              <div class="bottom-premier-item1">
+                                <img src="/images/mu.png" alt="">
+                                <span>Chelsea</span>
+                            </div>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="meeting-item">
+                          <h6>Saturday 15 May 2004</h6>
+                          <div class="meeting-scord">
+                              <div class="bottom-premier-item">
+                                <span>Liverpool</span>
+                                  <img src="/images/mu.png" alt="">
+                              </div>
+                              <div class="scord">
+                                <span>5</span> : <span>0</span>
+                              </div>
+                              <div class="bottom-premier-item1">
+                                <img src="/images/mu.png" alt="">
+                                <span>Chelsea</span>
+                            </div>
+                          </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="meeting-item">
+                          <h6>Saturday 15 May 2004</h6>
+                          <div class="meeting-scord">
+                              <div class="bottom-premier-item">
+                                <span>Liverpool</span>
+                                  <img src="/images/mu.png" alt="">
+                              </div>
+                              <div class="scord">
+                                <span>5</span> : <span>0</span>
+                              </div>
+                              <div class="bottom-premier-item1">
+                                <img src="/images/mu.png" alt="">
+                                <span>Chelsea</span>
+                            </div>
+                          </div>
+                      </div>
+                    </li>
+                </ul>
+            </div>
           </div>
         </div>
         <div class="row">

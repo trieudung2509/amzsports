@@ -9,29 +9,39 @@
 }
 
 .match-header {
-  margin-top: 40px;
+  margin-top: 30px;
   h5 {
     @include style-font(24px, #1A202C, 500);
     line-height: 36px;
+    @include mq(max_xs) {
+      @include style-font(20px, #1A202C, 500);
+      line-height: 30px;
+    }
   }
   .match-time {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
     p {
       @include style-font(14px, #1A202C, 400);
       line-height: 21px;
+      margin-bottom: 0;
     }
     .match-social {
       ul.social-ul {
         padding-left: 0px;
         display: flex;
         list-style: none;
+        margin-bottom: 0;
         li {
           text-align: center;
           img {
             width: 50%;
             object-fit: cover;
+            @include mq(max_xs) {
+              width: 40%;
+            }
           }
         }
       }
@@ -82,6 +92,14 @@
         width: 15%;
         margin-left: 10px;
       }
+      span {
+        @include style-font(20px, #1A202C, 500);
+        line-height: 30px;
+        @include mq(max_xs) {
+          @include style-font(14px, #1A202C, 500);
+          line-height: 21px;
+        }
+      }
     }
     .bottom-point {
       background: #007649;
@@ -90,6 +108,10 @@
       span {
         @include style-font(24px, #fff, 500);
         line-height: 36px;
+        @include mq(max_xs) {
+          @include style-font(20px, #fff, 500);
+          line-height: 30px;
+        }
       }
     }
     .bottom-premier-item1 {
@@ -99,6 +121,14 @@
       img {
         width: 15%;
         margin-right: 10px;
+      }
+      span {
+        @include style-font(20px, #1A202C, 500);
+        line-height: 30px;
+        @include mq(max_xs) {
+          @include style-font(14px, #1A202C, 500);
+          line-height: 21px;
+        }
       }
     }
   }
@@ -142,22 +172,43 @@
     @include style-font(20px, #1A202C, 500);
       line-height: 30px;
       margin: 20px 0px 50px;
+      @include mq(max_xs) {
+        margin: 20px 0px 20px;
+      }
   }
   .block-head {
     width: 90%;
     margin: 0 auto;
     display: block;
+    @include mq(max_md) {
+      width: 100%;
+    }
+    @include mq(max_xs) {
+      display: none;
+    }
     table {
       tr {
         line-height: 30px;
         td {
           text-align: center;
-          &:nth-child(2), &:nth-child(7) {
+          &:nth-child(2), &:nth-child(6) {
             width: 5%;
           }
-          &:nth-child(4) {
-            width: 10%;
+
+          &:nth-child(3) {
+            text-align: right;
           }
+
+          &.play-center {
+            width: 10%;
+            @include mq(max_md) {
+              width: 14%;
+            }
+          }
+          span.text-left {
+            text-align: left;
+          }
+
           &.play-center {
             position: relative;
             span:nth-child(1) {
@@ -187,16 +238,20 @@
 
           .total-win {
             position: relative;
-            width: 250px;
+            width: 310px;
             height: 24px;
-            margin-left: auto;
             background: #EDF2F7;
+            @include mq(max_md) {
+              width: 175px;
+            }
             &.right {
+              margin-left: auto;
               .loading {
                 right: 0;
               }
             }
             &.left {
+              margin-right: auto;
               .loading {
                 left: 0;
               }
@@ -212,8 +267,79 @@
           span {
             @include style-font(14px, #1A202C, 400);
             line-height: 21px;
+            display: inline-block;
           }
         }
+      }
+    }
+  }
+  .block-head-mobile {
+    display: none;
+    @include mq(max_xs) {
+      display: block;
+    }
+    .head-scord {
+      p {
+        @include style-font(14px, #1A202C, 400);
+        line-height: 21px;
+        margin-bottom: 5px;
+      }
+      h6 {
+        @include style-font(40px, #007649, 500);
+        line-height: 60px;
+      }
+    }
+    .scord-info {
+      .nav-tabs {
+        border: none;
+        .nav-link {
+          border: none;
+          @include style-font(14px, #1A202C, 500);
+          line-height: 21px;
+          padding: 10px 0px;
+          margin-right: 20px;
+          &.active {
+            border-bottom: 3px solid #007649;
+            color: #007649;
+          }
+        }
+      }
+      ul.info-sc {
+        padding-left: 0px;
+        list-style: none;
+        margin-top: 20px;
+          li {
+            .record-sc {
+              display: flex;
+              align-items: center;
+              p {
+                @include style-font(14px, #1A202C, 400);
+                line-height: 42px;
+                margin-bottom: 0;
+                width: 80px;
+                text-align: left;
+              }
+              span {
+                @include style-font(14px, #1A202C, 600);
+                line-height: 42px;
+                margin: 0px 25px;
+              }
+              .sc-width {
+                width: 60%;
+                background: #EDF2F7;
+                height: 25px;
+                position: relative;
+                .load {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  background: #AACC00;
+                  display: block;
+                  height: 100%;
+                }
+              }
+            }
+          }
       }
     }
   }
@@ -221,24 +347,108 @@
 .recent-meeting {
   border-top: 4px solid #EDF2F7;
   margin-top: 60px;
+  @include mq(max_xs) {
+    border: none;
+    margin-top: 0;
+  }
   h4 {
     @include style-font(20px, #1A202C, 500);
       line-height: 30px;
       margin: 40px 0px 20px;
       text-align: center;
+      @include mq(max_xs) {
+        margin: 20px 0px 0px 0px;
+      }
   }
+  .table-destop {
+    @include mq(max_xs) {
+      display: none;
+    }
+  }
+
+  .recent-mobile {
+    display: none;
+    @include mq(max_xs) {
+      display: block;
+    }
+    ul.meeting-list {
+      list-style: none;
+      padding-left: 0px;
+      li {
+        padding: 20px 0px;
+        border-bottom: 1px solid #EDF2F7;
+        .meeting-item {
+          h6 {
+            @include style-font(12px, #718096, 400);
+            line-height: 18px;
+            text-align: center;
+            margin-bottom: 15px;
+          }
+          .meeting-scord {
+            display: flex;
+            justify-content: center;
+            .bottom-premier-item {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                width: 15%;
+                margin-left: 10px;
+              }
+              span {
+                @include style-font(14px, #1A202C, 400);
+                line-height: 21px;
+              }
+            }
+
+            .scord {
+              color: #007649;
+              span {
+                @include style-font(14px, #fff, 400);
+                line-height: 21px;
+                padding: 5px 15px;
+                text-align: center;
+                background: #007649;
+              }
+            }
+            .bottom-premier-item1 {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img {
+                width: 15%;
+                margin-right: 10px;
+              }
+              span {
+                @include style-font(14px, #1A202C, 400);
+                line-height: 21px;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+
   .tbody-match {
     border-top: none;
     tr {
       height: 40px;
       td:nth-child(1) {
         padding-left: 80px;
-        width: 44%;
+        width: 45%;
+        @include mq(max_md) {
+          padding-left: 0px;
+        }
       }
 
       th {
         width: 8%;
         text-align: right;
+        @include mq(max_md) {
+          width: 12%;
+        }
         span {
           background: #007649;
           @include style-font(14px, #fff, 400);
@@ -289,6 +499,9 @@
 
 .match-news {
   margin-top: 30px;
+  @include mq(max_xs) {
+    margin-top: 0px;
+  }
   .item-news {
     h5 {
       @include style-font(18px, #1A202C, 500);
@@ -297,6 +510,11 @@
       padding-bottom: 20px;
       margin-bottom: 10px;
       margin-top: 40px;
+      @include mq(max_xs) {
+        @include style-font(16px, #1A202C, 500);
+        line-height: 24px;
+        padding-bottom: 12px;
+      }
       &::before {
         content: "";
         width: 40px;
@@ -310,6 +528,10 @@
     p {
       @include style-font(14px, #1A202C, 400);
       line-height: 21px;
+      @include mq(max_xs) {
+        @include style-font(12px, #1A202C, 400);
+        line-height: 18px;
+      }
     }
   }
 }
