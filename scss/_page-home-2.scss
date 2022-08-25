@@ -2,7 +2,342 @@
 @import "variables";
 @import "mixins";
 @import "fonts.scss";
+@mixin button {
+	font-size: 14px;
+	color: #fff;
+	background: $primary;
+	font-weight: 600;
+	padding: 15px 30px;
+	border-radius: 8px;
+}
 
+@mixin style-font($size, $color, $weight) {
+		font-size: $size;
+		color: $color;
+		font-weight: $weight;
+}
+
+//==============table match  style============
+#home-tabs {
+  @include mq(max_md) {
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 16px;
+   }
+}
+.list-tab-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mq(max_md) {
+   flex-direction: column;
+   flex-direction: column-reverse;
+   margin-bottom: 16px !important;
+  }
+
+  .date-picker-wrapper {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @include mq(max_md) {
+      width: 100%;
+      justify-content: flex-end;
+      margin-bottom: 16px;
+    }
+
+    .time-picker {
+      padding: 6px 4px;
+      display: flex;
+      align-items: center;
+      min-width: 161px;
+      cursor: pointer;
+      background-color: #EDF2F7;
+      max-height: 32px;
+
+      .time-label {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1A202C;
+        margin: 0px 16px;
+      }
+    }
+
+    .btn-picker {
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      cursor: pointer;
+      background-color: #007649;
+      &:focus {
+        outline: none;;
+      }
+    }
+
+  }
+}
+.row {
+  @include mq(max_md) {
+    margin-left: 0 !important;
+  }
+}
+.table-match-wrapper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;;
+
+  .header-wrapper {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #007649;
+  }
+
+  .header-table {
+    background: #007649;
+    padding: 6px 30px 6px 20px;
+    position: relative;
+    display: flex;
+    gap: 12px;
+    max-width: max-content;
+
+    @include mq(max_md) {
+      padding: 6px 20px 6px 10px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: -10px;
+      width: 20px;
+      height: 37px;
+      display: block;
+      transform: skew(20deg);
+      background: #fff;
+      border-bottom: 1px solid #007649;
+      @include mq(max_md) {
+        height: 34px;
+      }
+    }
+    .bottom-premier {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      @include style-font(16px, #fff, 500);
+      line-height: 24px;
+
+      @include mq(max_md) {
+        @include style-font(14px, #fff, 500);
+        line-height: 21px;
+      }
+      img {
+        display: block;
+        min-width: 16px;
+        max-height: 16px;
+        object-fit: cover;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .table-content {
+    width: 100%;
+    height: auto;
+    .table-row {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 10px 40px;
+      border-bottom: 1px solid #EDF2F7;
+
+      @include mq(max_md) {
+        flex-direction: column;
+        padding: 12px 0px;
+        align-items: flex-start;
+      }
+
+      &:hover {
+        background-color: rgba(0, 118, 73, 0.1);
+        cursor: pointer;
+      }
+    }
+
+    .table-column {
+      width: 50%;
+      display: flex;
+      align-items: center;
+
+      @include mq(max_md) {
+        width: 100%;
+      }
+      &:first-child {
+        @include mq(max_md) {
+          gap: 6px;
+          margin-bottom: 12px;
+        }
+      }
+
+      &:last-child {
+        @include mq(max_md) {
+          width: 100%;
+        }
+      }
+
+      .time  {
+        display: block;
+        min-width: 40px;
+        max-width: max-content;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1A202C;
+        text-align: left;
+        margin-right: 60px;
+        @include mq(max_md) {
+          min-width: fit-content;
+          margin-right: 0;
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+
+      .status {
+        min-width: 75px;
+        max-width: max-content;
+        text-align: left;
+        margin-right: 60px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1A202C;
+
+        @include mq(max_md) {
+          min-width: fit-content;
+          margin-right: 0;
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+
+      .live {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: #007649;
+
+        @include mq(max_md) {
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+
+      .upcoming {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #3252C0;
+        @include mq(max_md) {
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+
+      .dot {
+        display: none;
+        min-width: 3px;
+        height: 3px;
+        border: none;
+        background-color: #718096;
+        border-radius: 50%;
+
+        @include mq(max_md) {
+          display: block;
+        }
+      }
+
+      .club-item {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-width: max-content;
+
+        &:first-child {
+          justify-content: flex-end;
+        }
+
+        &:last-child {
+          justify-content: flex-end;
+          flex-direction: row-reverse;
+        }
+      }
+
+      .score {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1A202C;
+        width: 20%;
+        min-width: max-content;
+      }
+
+      .league {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: flex-start;
+        flex-grow: 1;
+        min-width: max-content;
+      }
+
+      .flag-league {
+        width: 16px;
+        height: 16px;
+        border: none;
+        border-radius: 50%;
+        object-fit: cover;
+
+        @include mq(max_md) {
+          display: none;
+        }
+      }
+      .flag-club {
+        width: 24px;
+        height: 24px;
+        border: none;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .name-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1A202C;
+      }
+    }
+  }
+}
+
+
+//================table match style==========
 .q-and-a-wrapper {
   width: 100%;
   height: 830px;

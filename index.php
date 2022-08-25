@@ -180,1838 +180,388 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9 live-left">
-						<div class="header-tab">
-							<div class="tab-1">
-								<ul class="nav nav-tabs" id="myTab" role="tablist">
-									<li class="nav-item" role="presentation">
-										<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
-											All Games
-										</button>
-									</li>
-									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
-											Live
-										</button>
-									</li>
-									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
-											Finished
-										</button>
-									</li>
-									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
-											Games on TV
-										</button>
-									</li>
-									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
-											Not Started
-										</button>
-									</li>
-								</ul>
-							</div>
-							<div class="tab-2">
-								<div class="form-group">
-									<div class="input-group date" id="datepicker">
-										<input type="text" class="form-control" id="date" />
-										<span class="input-group-append">
-											<span class="input-group-text bg-light d-block">
-												<i class="fa fa-calendar"></i>
-											</span>
-										</span>
-									</div>
+						<div class="header-tab list-tab-header">
+							<ul class="nav nav-tabs" id="home-tabs" role="tablist">
+								<li class="nav-item" role="presentation">
+									<button class="nav-link active" data-bs-toggle="tab" data-bs-target="#all-game-tab" type="button" role="tab">
+										All Games
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" data-bs-toggle="tab" data-bs-target="#live-tab" type="button" role="tab">
+										Live
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" data-bs-toggle="tab" data-bs-target="#finished-tab" type="button" role="tab">
+										Finished
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" data-bs-toggle="tab" data-bs-target="#game-on-tv-tab" type="button" role="tab">
+										Games on TV
+									</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" data-bs-toggle="tab" data-bs-target="#not-started-tab" type="button" role="tab">
+										Not Started
+									</button>
+								</li>
+							</ul>
+							<div class="date-picker-wrapper">
+								<div class="time-picker">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.5 5L7.5 10L12.5 15" stroke="#1A202C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+									<span class="time-label">10/08/2022</span>
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M7.5 5L12.5 10L7.5 15" stroke="#1A202C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
 								</div>
+								<button class="btn-picker">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.9584 2.96669V1.66669C13.9584 1.32502 13.6751 1.04169 13.3334 1.04169C12.9918 1.04169 12.7084 1.32502 12.7084 1.66669V2.91669H7.29178V1.66669C7.29178 1.32502 7.00844 1.04169 6.66678 1.04169C6.32511 1.04169 6.04178 1.32502 6.04178 1.66669V2.96669C3.79178 3.17502 2.70011 4.51669 2.53344 6.50835C2.51678 6.75002 2.71678 6.95002 2.95011 6.95002H17.0501C17.2918 6.95002 17.4918 6.74169 17.4668 6.50835C17.3001 4.51669 16.2084 3.17502 13.9584 2.96669Z" fill="white"/>
+									<path d="M16.6667 8.20001H3.33333C2.875 8.20001 2.5 8.57501 2.5 9.03335V14.1667C2.5 16.6667 3.75 18.3333 6.66667 18.3333H13.3333C16.25 18.3333 17.5 16.6667 17.5 14.1667V9.03335C17.5 8.57501 17.125 8.20001 16.6667 8.20001ZM7.675 15.175C7.59167 15.25 7.5 15.3083 7.4 15.35C7.3 15.3917 7.19167 15.4167 7.08333 15.4167C6.975 15.4167 6.86667 15.3917 6.76667 15.35C6.66667 15.3083 6.575 15.25 6.49167 15.175C6.34167 15.0167 6.25 14.8 6.25 14.5833C6.25 14.3667 6.34167 14.15 6.49167 13.9917C6.575 13.9167 6.66667 13.8583 6.76667 13.8167C6.96667 13.7333 7.2 13.7333 7.4 13.8167C7.5 13.8583 7.59167 13.9167 7.675 13.9917C7.825 14.15 7.91667 14.3667 7.91667 14.5833C7.91667 14.8 7.825 15.0167 7.675 15.175ZM7.85 11.9833C7.80833 12.0833 7.75 12.175 7.675 12.2583C7.59167 12.3333 7.5 12.3917 7.4 12.4333C7.3 12.475 7.19167 12.5 7.08333 12.5C6.975 12.5 6.86667 12.475 6.76667 12.4333C6.66667 12.3917 6.575 12.3333 6.49167 12.2583C6.41667 12.175 6.35833 12.0833 6.31667 11.9833C6.275 11.8833 6.25 11.775 6.25 11.6667C6.25 11.5583 6.275 11.45 6.31667 11.35C6.35833 11.25 6.41667 11.1583 6.49167 11.075C6.575 11 6.66667 10.9417 6.76667 10.9C6.96667 10.8167 7.2 10.8167 7.4 10.9C7.5 10.9417 7.59167 11 7.675 11.075C7.75 11.1583 7.80833 11.25 7.85 11.35C7.89167 11.45 7.91667 11.5583 7.91667 11.6667C7.91667 11.775 7.89167 11.8833 7.85 11.9833ZM10.5917 12.2583C10.5083 12.3333 10.4167 12.3917 10.3167 12.4333C10.2167 12.475 10.1083 12.5 10 12.5C9.89167 12.5 9.78333 12.475 9.68333 12.4333C9.58333 12.3917 9.49167 12.3333 9.40833 12.2583C9.25833 12.1 9.16667 11.8833 9.16667 11.6667C9.16667 11.45 9.25833 11.2333 9.40833 11.075C9.49167 11 9.58333 10.9417 9.68333 10.9C9.88333 10.8083 10.1167 10.8083 10.3167 10.9C10.4167 10.9417 10.5083 11 10.5917 11.075C10.7417 11.2333 10.8333 11.45 10.8333 11.6667C10.8333 11.8833 10.7417 12.1 10.5917 12.2583Z" fill="white"/>
+									</svg>
+
+								</button>
 							</div>
 						</div>
 
 						<div class="tab-content" id="myTabContent">
-							<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-								<div class="tab-all-game">
-									<ul class="match-tranning">
-										<li class="match-item">
-											<table class="table">
-												<thead>
-													<tr>
-														<td colspan="2" class="p-0">
-															<div class="header-table">
-																<div class="bottom-premier">
-																	<img src="/images/premier-league.png" alt="">
-																	Premier League
-																</div>
-															</div>
-														</td>
-													</tr>
-												</thead>
-												<tbody class="tbody-match">
-													<tr>
-														<td>02:00</td>
-														<td>Finished</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="upcoming">
-														<td>02:00</td>
-														<td>Upcoming</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</li>
-										<li class="match-item">
-											<table class="table">
-												<thead>
-													<tr>
-														<td colspan="2" class="p-0">
-															<div class="header-table">
-																<div class="bottom-premier">
-																	<img src="/images/premier-league.png" alt="">
-																	Premier League
-																</div>
-															</div>
-														</td>
-													</tr>
-												</thead>
-												<tbody class="tbody-match">
-													<tr>
-														<td>02:00</td>
-														<td>Finished</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="upcoming">
-														<td>02:00</td>
-														<td>Upcoming</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</li>
-										<li class="match-item">
-											<table class="table">
-												<thead>
-													<tr>
-														<td colspan="2" class="p-0">
-															<div class="header-table">
-																<div class="bottom-premier">
-																	<img src="/images/premier-league.png" alt="">
-																	Premier League
-																</div>
-															</div>
-														</td>
-													</tr>
-												</thead>
-												<tbody class="tbody-match">
-													<tr>
-														<td>02:00</td>
-														<td>Finished</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="upcoming">
-														<td>02:00</td>
-														<td>Upcoming</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</li>
-										<li class="match-item">
-											<table class="table">
-												<thead>
-													<tr>
-														<td colspan="2" class="p-0">
-															<div class="header-table">
-																<div class="bottom-premier">
-																	<img src="/images/premier-league.png" alt="">
-																	Premier League
-																</div>
-															</div>
-														</td>
-													</tr>
-												</thead>
-												<tbody class="tbody-match">
-													<tr>
-														<td>02:00</td>
-														<td>Finished</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="upcoming">
-														<td>02:00</td>
-														<td>Upcoming</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</li>
-										<li class="match-item">
-											<table class="table">
-												<thead>
-													<tr>
-														<td colspan="2" class="p-0">
-															<div class="header-table">
-																<div class="bottom-premier">
-																	<img src="/images/premier-league.png" alt="">
-																	Premier League
-																</div>
-															</div>
-														</td>
-													</tr>
-												</thead>
-												<tbody class="tbody-match">
-													<tr>
-														<td>02:00</td>
-														<td>Finished</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="upcoming">
-														<td>02:00</td>
-														<td>Upcoming</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</li>
-									</ul>
+							<div class="tab-pane fade show active" id="all-game-tab">
+								<!-- ========TABLE 1 CONTENT ========= -->
+								<div class="table-match-wrapper">
+									<div class="header-wrapper">
+										<div class="header-table">
+											<div class="bottom-premier">
+												<img src="/images/premier-league.png" alt="">
+												<span>Premier League</span>
+											</div>
+										</div>
+									</div>
+									<div class="table-content">
+										<div class="table-row">
+											<div class="table-column left-column">
+												<span class="time">20:00</span>
+												<span class="dot"></span>
+												<span class="status">Finished</span>
+												<span class="dot"></span>
+												<div class="league">
+													<img src="./images/premier-league.png" alt="" class="flag-league" />
+													<span class="name-text">Premier League</span>
+												</div>
+											</div>
+											<div class="table-column">
+												<div class="club-item">
+													<span class="name-text">Liverpool</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+												<div class="score">5 : 0</div>
+												<div class="club-item">
+													<span class="name-text">Chelsea</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+											</div>
+										</div>
+										<div class="table-row">
+											<div class="table-column left-column">
+												<span class="time">20:00</span>
+												<span class="dot"></span>
+												<span class="status live">Live</span>
+												<span class="dot"></span>
+												<div class="league">
+													<img src="./images/premier-league.png" alt="" class="flag-league" />
+													<span class="name-text">Premier League</span>
+												</div>
+											</div>
+											<div class="table-column">
+												<div class="club-item">
+													<span class="name-text">Man United</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+												<div class="score">5 : 0</div>
+												<div class="club-item">
+													<span class="name-text">Arsenal</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+											</div>
+										</div>
+										<div class="table-row">
+											<div class="table-column left-column">
+												<span class="time">20:00</span>
+												<span class="dot"></span>
+												<span class="status upcoming">Upcoming</span>
+												<span class="dot"></span>
+												<div class="league">
+													<img src="./images/premier-league.png" alt="" class="flag-league" />
+													<span class="name-text">Premier League</span>
+												</div>
+											</div>
+											<div class="table-column">
+												<div class="club-item">
+													<span class="name-text">Tottenham</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+												<div class="score">-</div>
+												<div class="club-item">
+													<span class="name-text">Man City</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
+								<!-- ========TABLE 1 CONTENT ========= -->
+
+								<!-- ========TABLE 2 CONTENT ========= -->
+								<div class="table-match-wrapper">
+									<div class="header-wrapper">
+										<div class="header-table">
+											<div class="bottom-premier">
+												<img src="/images/premier-league.png" alt="">
+												<span>La Liga</span>
+											</div>
+										</div>
+									</div>
+									<div class="table-content">
+										<div class="table-row">
+											<div class="table-column left-column">
+												<span class="time">20:00</span>
+												<span class="dot"></span>
+												<span class="status">Finished</span>
+												<span class="dot"></span>
+												<div class="league">
+													<img src="./images/premier-league.png" alt="" class="flag-league" />
+													<span class="name-text">La Liga</span>
+												</div>
+											</div>
+											<div class="table-column">
+												<div class="club-item">
+													<span class="name-text">Liverpool</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+												<div class="score">5 : 0</div>
+												<div class="club-item">
+													<span class="name-text">Chelsea</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+											</div>
+										</div>
+										<div class="table-row">
+											<div class="table-column left-column">
+												<span class="time">20:00</span>
+												<span class="dot"></span>
+												<span class="status live">Live</span>
+												<span class="dot"></span>
+												<div class="league">
+													<img src="./images/premier-league.png" alt="" class="flag-league" />
+													<span class="name-text">La Liga</span>
+												</div>
+											</div>
+											<div class="table-column">
+												<div class="club-item">
+													<span class="name-text">Man United</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+												<div class="score">5 : 0</div>
+												<div class="club-item">
+													<span class="name-text">Arsenal</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+											</div>
+										</div>
+										<div class="table-row">
+											<div class="table-column left-column">
+												<span class="time">20:00</span>
+												<span class="dot"></span>
+												<span class="status upcoming">Upcoming</span>
+												<span class="dot"></span>
+												<div class="league">
+													<img src="./images/premier-league.png" alt="" class="flag-league" />
+													<span class="name-text">La Liga</span>
+												</div>
+											</div>
+											<div class="table-column">
+												<div class="club-item">
+													<span class="name-text">Tottenham</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+												<div class="score">-</div>
+												<div class="club-item">
+													<span class="name-text">Man City</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- ========TABLE 2 CONTENT ========= -->
+
+								<!-- ========TABLE 3 CONTENT ========= -->
+								<div class="table-match-wrapper">
+									<div class="header-wrapper">
+										<div class="header-table">
+											<div class="bottom-premier">
+												<img src="/images/premier-league.png" alt="">
+												<span>Bundesliga</span>
+											</div>
+										</div>
+									</div>
+									<div class="table-content">
+										<div class="table-row">
+											<div class="table-column left-column">
+												<span class="time">20:00</span>
+												<span class="dot"></span>
+												<span class="status">Finished</span>
+												<span class="dot"></span>
+												<div class="league">
+													<img src="./images/premier-league.png" alt="" class="flag-league" />
+													<span class="name-text">Bundesliga</span>
+												</div>
+											</div>
+											<div class="table-column">
+												<div class="club-item">
+													<span class="name-text">Liverpool</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+												<div class="score">5 : 0</div>
+												<div class="club-item">
+													<span class="name-text">Chelsea</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+											</div>
+										</div>
+										<div class="table-row">
+											<div class="table-column left-column">
+												<span class="time">20:00</span>
+												<span class="dot"></span>
+												<span class="status live">Live</span>
+												<span class="dot"></span>
+												<div class="league">
+													<img src="./images/premier-league.png" alt="" class="flag-league" />
+													<span class="name-text">Bundesliga</span>
+												</div>
+											</div>
+											<div class="table-column">
+												<div class="club-item">
+													<span class="name-text">Man United</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+												<div class="score">5 : 0</div>
+												<div class="club-item">
+													<span class="name-text">Arsenal</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+											</div>
+										</div>
+										<div class="table-row">
+											<div class="table-column left-column">
+												<span class="time">20:00</span>
+												<span class="dot"></span>
+												<span class="status upcoming">Upcoming</span>
+												<span class="dot"></span>
+												<div class="league">
+													<img src="./images/premier-league.png" alt="" class="flag-league" />
+													<span class="name-text">Bundesliga</span>
+												</div>
+											</div>
+											<div class="table-column">
+												<div class="club-item">
+													<span class="name-text">Tottenham</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+												<div class="score">-</div>
+												<div class="club-item">
+													<span class="name-text">Man City</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+											</div>
+										</div>
+										<div class="table-row">
+											<div class="table-column left-column">
+												<span class="time">20:00</span>
+												<span class="dot"></span>
+												<span class="status upcoming">Upcoming</span>
+												<span class="dot"></span>
+												<div class="league">
+													<img src="./images/premier-league.png" alt="" class="flag-league" />
+													<span class="name-text">Bundesliga</span>
+												</div>
+											</div>
+											<div class="table-column">
+												<div class="club-item">
+													<span class="name-text">Tottenham</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+												<div class="score">-</div>
+												<div class="club-item">
+													<span class="name-text">Man City</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+											</div>
+										</div>
+										<div class="table-row">
+											<div class="table-column left-column">
+												<span class="time">20:00</span>
+												<span class="dot"></span>
+												<span class="status upcoming">Upcoming</span>
+												<span class="dot"></span>
+												<div class="league">
+													<img src="./images/premier-league.png" alt="" class="flag-league" />
+													<span class="name-text">Bundesliga</span>
+												</div>
+											</div>
+											<div class="table-column">
+												<div class="club-item">
+													<span class="name-text">Tottenham</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+												<div class="score">-</div>
+												<div class="club-item">
+													<span class="name-text">Man City</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+											</div>
+										</div>
+										<div class="table-row">
+											<div class="table-column left-column">
+												<span class="time">20:00</span>
+												<span class="dot"></span>
+												<span class="status upcoming">Upcoming</span>
+												<span class="dot"></span>
+												<div class="league">
+													<img src="./images/premier-league.png" alt="" class="flag-league" />
+													<span class="name-text">Bundesliga</span>
+												</div>
+											</div>
+											<div class="table-column">
+												<div class="club-item">
+													<span class="name-text">Tottenham</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+												<div class="score">-</div>
+												<div class="club-item">
+													<span class="name-text">Man City</span>
+													<img src="./images/mu.png" alt="" class="flag-club" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- ========TABLE 3 CONTENT ========= -->
 							</div>
-							<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-								<div class="tab-all-game">
-									<ul class="match-tranning">
-										<li class="match-item">
-											<table class="table">
-												<thead>
-													<tr>
-														<td colspan="2" class="p-0">
-															<div class="header-table">
-																<div class="bottom-premier">
-																	<img src="/images/premier-league.png" alt="">
-																	Premier League
-																</div>
-															</div>
-														</td>
-													</tr>
-												</thead>
-												<tbody class="tbody-match">
-													<tr>
-														<td>02:00</td>
-														<td>Finished</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="upcoming">
-														<td>02:00</td>
-														<td>Upcoming</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</li>
-										<li class="match-item">
-											<table class="table">
-												<thead>
-													<tr>
-														<td colspan="2" class="p-0">
-															<div class="header-table">
-																<div class="bottom-premier">
-																	<img src="/images/premier-league.png" alt="">
-																	Premier League
-																</div>
-															</div>
-														</td>
-													</tr>
-												</thead>
-												<tbody class="tbody-match">
-													<tr>
-														<td>02:00</td>
-														<td>Finished</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="upcoming">
-														<td>02:00</td>
-														<td>Upcoming</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</li>
-										<li class="match-item">
-											<table class="table">
-												<thead>
-													<tr>
-														<td colspan="2" class="p-0">
-															<div class="header-table">
-																<div class="bottom-premier">
-																	<img src="/images/premier-league.png" alt="">
-																	Premier League
-																</div>
-															</div>
-														</td>
-													</tr>
-												</thead>
-												<tbody class="tbody-match">
-													<tr>
-														<td>02:00</td>
-														<td>Finished</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="upcoming">
-														<td>02:00</td>
-														<td>Upcoming</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</li>
-										<li class="match-item">
-											<table class="table">
-												<thead>
-													<tr>
-														<td colspan="2" class="p-0">
-															<div class="header-table">
-																<div class="bottom-premier">
-																	<img src="/images/premier-league.png" alt="">
-																	Premier League
-																</div>
-															</div>
-														</td>
-													</tr>
-												</thead>
-												<tbody class="tbody-match">
-													<tr>
-														<td>02:00</td>
-														<td>Finished</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="upcoming">
-														<td>02:00</td>
-														<td>Upcoming</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</li>
-										<li class="match-item">
-											<table class="table">
-												<thead>
-													<tr>
-														<td colspan="2" class="p-0">
-															<div class="header-table">
-																<div class="bottom-premier">
-																	<img src="/images/premier-league.png" alt="">
-																	Premier League
-																</div>
-															</div>
-														</td>
-													</tr>
-												</thead>
-												<tbody class="tbody-match">
-													<tr>
-														<td>02:00</td>
-														<td>Finished</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="upcoming">
-														<td>02:00</td>
-														<td>Upcoming</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</li>
-									</ul>
-								</div>
+							<div class="tab-pane fade" id="live-tab">
+								tab2
 							</div>
-							<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-								<div class="tab-all-game">
-									<ul class="match-tranning">
-										<li class="match-item">
-											<table class="table">
-												<thead>
-													<tr>
-														<td colspan="2" class="p-0">
-															<div class="header-table">
-																<div class="bottom-premier">
-																	<img src="/images/premier-league.png" alt="">
-																	Premier League
-																</div>
-															</div>
-														</td>
-													</tr>
-												</thead>
-												<tbody class="tbody-match">
-													<tr>
-														<td>02:00</td>
-														<td>Finished</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="upcoming">
-														<td>02:00</td>
-														<td>Upcoming</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</li>
-										<li class="match-item">
-											<table class="table">
-												<thead>
-													<tr>
-														<td colspan="2" class="p-0">
-															<div class="header-table">
-																<div class="bottom-premier">
-																	<img src="/images/premier-league.png" alt="">
-																	Premier League
-																</div>
-															</div>
-														</td>
-													</tr>
-												</thead>
-												<tbody class="tbody-match">
-													<tr>
-														<td>02:00</td>
-														<td>Finished</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="upcoming">
-														<td>02:00</td>
-														<td>Upcoming</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</li>
-										<li class="match-item">
-											<table class="table">
-												<thead>
-													<tr>
-														<td colspan="2" class="p-0">
-															<div class="header-table">
-																<div class="bottom-premier">
-																	<img src="/images/premier-league.png" alt="">
-																	Premier League
-																</div>
-															</div>
-														</td>
-													</tr>
-												</thead>
-												<tbody class="tbody-match">
-													<tr>
-														<td>02:00</td>
-														<td>Finished</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="upcoming">
-														<td>02:00</td>
-														<td>Upcoming</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</li>
-										<li class="match-item">
-											<table class="table">
-												<thead>
-													<tr>
-														<td colspan="2" class="p-0">
-															<div class="header-table">
-																<div class="bottom-premier">
-																	<img src="/images/premier-league.png" alt="">
-																	Premier League
-																</div>
-															</div>
-														</td>
-													</tr>
-												</thead>
-												<tbody class="tbody-match">
-													<tr>
-														<td>02:00</td>
-														<td>Finished</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="upcoming">
-														<td>02:00</td>
-														<td>Upcoming</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</li>
-										<li class="match-item">
-											<table class="table">
-												<thead>
-													<tr>
-														<td colspan="2" class="p-0">
-															<div class="header-table">
-																<div class="bottom-premier">
-																	<img src="/images/premier-league.png" alt="">
-																	Premier League
-																</div>
-															</div>
-														</td>
-													</tr>
-												</thead>
-												<tbody class="tbody-match">
-													<tr>
-														<td>02:00</td>
-														<td>Finished</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="live">
-														<td>02:00</td>
-														<td>Live</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-													<tr class="upcoming">
-														<td>02:00</td>
-														<td>Upcoming</td>
-														<td>
-															<div class="bottom-premier">
-																<img src="/images/premier-league.png" alt="">
-																Premier League
-															</div>
-														</td>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Liverpool</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-														<th>
-															5 : 0
-														</th>
-														<td>
-															<div class="bottom-premier-item">
-																<span>Chelsea</span>
-																<img src="/images/mu.png" alt="">
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</li>
-									</ul>
-								</div>
+							<div class="tab-pane fade" id="finished-tab">
+								tab3
+							</div>
+							<div class="tab-pane fade" id="game-on-tv-tab">
+								tab4
+							</div>
+							<div class="tab-pane fade" id="not-started-tab">
+								tab5
 							</div>
 						</div>
 					</div>
