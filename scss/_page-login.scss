@@ -2,7 +2,7 @@
 @import "variables";
 @import "mixins";
 
-@mixin style-font($size, $color, $weight, $lineHeight) {
+@mixin style-font1($size, $color, $weight, $lineHeight) {
   font-size: $size;
   color: $color;
   font-weight: $weight;
@@ -34,9 +34,9 @@
     background: url("../images/background-login.png") no-repeat;
     background-size: cover;
     .title-item-left {
-      @include style-font(24px, #ffffff, 600, 36px);
+      @include style-font1(24px, #ffffff, 600, 36px);
       @include mq(max_md) {
-        @include style-font(20px, #ffffff, 600, 30px);
+        @include style-font1(20px, #ffffff, 600, 30px);
       }
     }
     .line-green {
@@ -47,9 +47,9 @@
     }
     .content-item-left {
       margin: 25px 0;
-      @include style-font(20px, #ffffff, 400, 30px);
+      @include style-font1(20px, #ffffff, 400, 30px);
       @include mq(max_md) {
-        @include style-font(16px, #ffffff, 400, 24px);
+        @include style-font1(16px, #ffffff, 400, 24px);
       }
     }
   }
@@ -64,7 +64,7 @@
         margin: 0 16px;
       }
       .title-item-right {
-        @include style-font(24px, #1a202c, 600, 36px);
+        @include style-font1(24px, #1a202c, 600, 36px);
       }
       .box-input {
         margin: 20px 0;
@@ -75,7 +75,7 @@
           padding: 11px 16px;
         }
         .label-input {
-          @include style-font(16px, #1a202c, 400, 24px);
+          @include style-font1(16px, #1a202c, 400, 24px);
           margin-bottom: 8px;
         }
       }
@@ -84,16 +84,20 @@
         border: none;
         background: #ffffff;
         padding: 10px;
-        @include style-font(16px, #007649, 400, 24px);
+        @include style-font1(16px, #007649, 400, 24px);
       }
       .btn-submit:active {
         background: #007649;
-        @include style-font(16px, #ffffff, 600, 24px);
+        @include style-font1(16px, #ffffff, 600, 24px);
       }
       .active {
         background: #007649;
-        @include style-font(16px, #ffffff, 600, 24px);
+        @include style-font1(16px, #ffffff, 600, 24px);
       }
     }
   }
+}
+
+a.link-news {
+  @include style-font1(14px,#fff, 500,21px);
 }

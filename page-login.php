@@ -1,6 +1,12 @@
 <?php include "templates/head.php"; ?>
 <body>
-
+<header class="main-header">
+	<div class="container">
+		<?php
+				include "templates/header-login.php";
+		?>
+  </div>
+</header>
   <div class="login-body">
     <div class="block-login-left">
       <h3 class="title-item-left">Become a AMZSport member and you will get</h3>
@@ -34,7 +40,7 @@
       </div>
     </div>
   </div>
-
+  <?php include "templates/footer.php"; ?>
 </body>
 
 </html>
