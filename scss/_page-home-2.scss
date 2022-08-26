@@ -92,6 +92,12 @@
     margin-left: 0 !important;
   }
 }
+.table-timeline-match {
+  margin-top: 46px;
+  @include mq(max_md) {
+    margin-top: 24px;
+  }
+}
 .table-match-wrapper {
   width: 100%;
   height: auto;
@@ -101,6 +107,17 @@
     width: 100%;
     height: auto;
     border-bottom: 1px solid #007649;
+  }
+
+  .timeline-table-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1A202C;
   }
 
   .header-table {
@@ -169,6 +186,22 @@
       &:hover {
         background-color: rgba(0, 118, 73, 0.1);
         cursor: pointer;
+      }
+    }
+
+    .table-row-football {
+      &:first-child {
+        border-top: 1px solid #EDF2F7;
+        @include mq(max_md) {
+           border-top: none;
+        }
+      }
+      border-left: 1px solid #EDF2F7;
+      border-right: 1px solid #EDF2F7;
+
+      @include mq(max_md) {
+        border-left: none;
+        border-right: none;
       }
     }
 
