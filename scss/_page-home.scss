@@ -23,11 +23,15 @@
   background: url('../images/bg-tran.png') no-repeat;
   padding: 60px 0px;
   background-size: cover;
-  overflow: scroll;
+  @include mq(max_xs) {
+    overflow: scroll;
+  }
   .row-match {
-    justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    @include mq(max_xs) {
+      justify-content: flex-start;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
   }
   .record-match {
     padding: 0px 8px;
