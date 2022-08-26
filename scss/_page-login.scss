@@ -12,7 +12,8 @@
 .login-body {
   display: flex;
   justify-content: center;
-  padding: 40px;
+  padding-top: 80px;
+  padding-bottom: 160px;
   width: 80%;
   margin: auto;
   @include mq(max_md) {

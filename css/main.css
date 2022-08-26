@@ -1665,7 +1665,8 @@ button,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 40px;
+  padding-top: 80px;
+  padding-bottom: 160px;
   width: 80%;
   margin: auto;
 }
