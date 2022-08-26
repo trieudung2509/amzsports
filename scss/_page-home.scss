@@ -23,6 +23,12 @@
   background: url('../images/bg-tran.png') no-repeat;
   padding: 60px 0px;
   background-size: cover;
+  overflow: scroll;
+  .row-match {
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
   .record-match {
     padding: 0px 8px;
     .block-item {
@@ -48,7 +54,7 @@
           flex-direction: column;
           align-items: center;
           img {
-            width: 50%;
+            width: 60%;
           }
           p {
             @include style-font(14px, #fff, 500);

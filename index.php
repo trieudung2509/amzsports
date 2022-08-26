@@ -5,7 +5,7 @@
 	<div class="main-body">
 		<div class="block-match">
 			<div class="container">
-				<div class="row">
+				<div class="row row-match">
 					<div class="col-md-2 col-6 record-match">
 						<div class="block-item">
 							<div class="item-top">

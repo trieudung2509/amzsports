@@ -177,7 +177,6 @@
       }
   }
   .block-head {
-    width: 90%;
     margin: 0 auto;
     display: block;
     @include mq(max_md) {
@@ -187,12 +186,16 @@
       display: none;
     }
     table {
+      margin: 0 auto;
       tr {
         line-height: 30px;
         td {
+          &:first-child, &:last-child {
+            width: 285px;
+          }
           text-align: center;
           &:nth-child(2), &:nth-child(6) {
-            width: 5%;
+            width: 50px;
           }
 
           &:nth-child(3) {
@@ -200,7 +203,7 @@
           }
 
           &.play-center {
-            width: 10%;
+            width: 15%;
             @include mq(max_md) {
               width: 14%;
             }

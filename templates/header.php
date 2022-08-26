@@ -40,233 +40,15 @@
 			<div class="menu-block">
 					<nav class="navbar navbar-expand-lg navbar-menu">
 						<ul class="navbar-nav">
-							<li class="nav-item" data-menu="football">
+							<li class="nav-item football" data-menu="football">
 								<a class="nav-link" aria-current="page" href="#">
 										<img src="../images/football.png" alt=""> <span>Football</span>
 								</a>
-								<div class="children-menu">
-									<a href="" class="header-chil">View all football <i class="far fa-arrow-right"></i></a>
-									<div class="row">
-											<div class="col-12 col-md-3 chilren-item">
-												<h5>British</h5>
-												<ul class="menu-chil-1">
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-												</ul>
-											</div>
-											<div class="col-12 col-md-3 chilren-item">
-												<h5>British</h5>
-												<ul class="menu-chil-1">
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-												</ul>
-											</div>
-											<div class="col-12 col-md-3 chilren-item">
-												<h5>British</h5>
-												<ul class="menu-chil-1">
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-												</ul>
-											</div>
-											<div class="col-12 col-md-3 chilren-item">
-												<h5>British</h5>
-												<ul class="menu-chil-1">
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-												</ul>
-											</div>
-									</div>
-								</div>
 							</li>
-							<li class="nav-item" data-menu="tennis">
+							<li class="nav-item tennis" data-menu="tennis">
 								<a class="nav-link" aria-current="page" href="#">
 										<img src="../images/tennis.png" alt=""> <span>Tennis</span>
 								</a>
-								<div class="children-menu">
-									<a href="" class="header-chil">View all tennis <i class="far fa-arrow-right"></i></a>
-									<div class="row">
-											<div class="col-12 col-md-3 chilren-item">
-												<h5>British</h5>
-												<ul class="menu-chil-1">
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-												</ul>
-											</div>
-											<div class="col-12 col-md-3 chilren-item">
-												<h5>British</h5>
-												<ul class="menu-chil-1">
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-												</ul>
-											</div>
-											<div class="col-12 col-md-3 chilren-item">
-												<h5>British</h5>
-												<ul class="menu-chil-1">
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-												</ul>
-											</div>
-											<div class="col-12 col-md-3 chilren-item">
-												<h5>British</h5>
-												<ul class="menu-chil-1">
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-														<li>
-																<a href="#">English Football on TV</a>
-														</li>
-												</ul>
-											</div>
-									</div>
-								</div>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" aria-current="page" href="#">
@@ -301,7 +83,7 @@
 						</ul>
 				</nav>
 				<div class="block-sub-menu">
-					<div class="children-menu football">
+					<div class="children-menu football" data-hover="football">
 							<a href="" class="header-chil">View all football <i class="far fa-arrow-right"></i></a>
 							<div class="row">
 									<div class="col-12 col-md-3 chilren-item">
@@ -410,7 +192,7 @@
 									</div>
 							</div>
 						</div>
-						<div class="children-menu tennis">
+						<div class="children-menu tennis" data-hover="tennis">
 							<a href="" class="header-chil">View all tennis <i class="far fa-arrow-right"></i></a>
 							<div class="row">
 									<div class="col-12 col-md-3 chilren-item">

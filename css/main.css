@@ -77,6 +77,11 @@ button,
   background-size: cover;
   background-position: 60% 100%;
 }
+@media only screen and (max-width: 575px) {
+  .main-header .navbar-top .navbar-logo {
+    width: 45%;
+  }
+}
 .main-header .navbar-top .navbar-logo img {
   width: 70%;
 }
@@ -174,21 +179,21 @@ button,
     width: 160px;
   }
 }
-.main-header .navbar-menu li.nav-item:hover {
+.main-header .navbar-menu li.nav-item.active, .main-header .navbar-menu li.nav-item:hover {
   background: #FFFFFF;
   color: #007649;
   border-radius: 0px;
 }
-.main-header .navbar-menu li.nav-item:hover a.nav-link {
+.main-header .navbar-menu li.nav-item.active a.nav-link, .main-header .navbar-menu li.nav-item:hover a.nav-link {
   font-size: 16px;
   color: #007649;
   font-weight: 500;
 }
-.main-header .navbar-menu li.nav-item:hover .children-menu {
+.main-header .navbar-menu li.nav-item.active .children-menu, .main-header .navbar-menu li.nav-item:hover .children-menu {
   display: block;
 }
 @media only screen and (max-width: 575px) {
-  .main-header .navbar-menu li.nav-item:hover .children-menu {
+  .main-header .navbar-menu li.nav-item.active .children-menu, .main-header .navbar-menu li.nav-item:hover .children-menu {
     display: none;
   }
 }
@@ -262,13 +267,14 @@ button,
 @media only screen and (max-width: 575px) {
   .main-header .menu-block {
     padding-left: 0;
+    margin-left: -12px;
   }
 }
 .main-header .block-sub-menu .children-menu {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 12px;
   background: #fff;
   width: 100%;
   z-index: 99;
@@ -283,6 +289,8 @@ button,
 @media only screen and (max-width: 575px) {
   .main-header .block-sub-menu .children-menu {
     left: 0px;
+    width: 103%;
+    overflow: hidden;
   }
 }
 .main-header .block-sub-menu .children-menu a.header-chil {
@@ -332,6 +340,18 @@ button,
   background: url("../images/bg-tran.png") no-repeat;
   padding: 60px 0px;
   background-size: cover;
+  overflow: scroll;
+}
+.block-match .row-match {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 .block-match .record-match {
   padding: 0px 8px;
@@ -372,7 +392,7 @@ button,
           align-items: center;
 }
 .block-match .record-match .block-item .item-top .club-item img {
-  width: 50%;
+  width: 60%;
 }
 .block-match .record-match .block-item .item-top .club-item p {
   font-size: 14px;
@@ -454,6 +474,8 @@ button,
   font-weight: 500;
   line-height: 21px;
   margin-right: 20px;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
   min-width: max-content;
 }
 .body-live .live-left .header-tab .nav-tabs button.nav-link.active {
@@ -880,7 +902,6 @@ button,
   }
 }
 .head-to-head .block-head {
-  width: 90%;
   margin: 0 auto;
   display: block;
 }
@@ -894,20 +915,26 @@ button,
     display: none;
   }
 }
+.head-to-head .block-head table {
+  margin: 0 auto;
+}
 .head-to-head .block-head table tr {
   line-height: 30px;
 }
 .head-to-head .block-head table tr td {
   text-align: center;
 }
+.head-to-head .block-head table tr td:first-child, .head-to-head .block-head table tr td:last-child {
+  width: 285px;
+}
 .head-to-head .block-head table tr td:nth-child(2), .head-to-head .block-head table tr td:nth-child(6) {
-  width: 5%;
+  width: 50px;
 }
 .head-to-head .block-head table tr td:nth-child(3) {
   text-align: right;
 }
 .head-to-head .block-head table tr td.play-center {
-  width: 10%;
+  width: 15%;
 }
 @media only screen and (max-width: 991px) {
   .head-to-head .block-head table tr td.play-center {
