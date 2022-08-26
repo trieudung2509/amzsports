@@ -110,33 +110,24 @@
   }
 }
 
-.table-match-wrapper {
-  width: 100%;
-  height: auto;
-  margin-bottom: 24px;
-}
 .table-timeline-match {
   margin-top: 46px;
 }
-
 @media only screen and (max-width: 991px) {
   .table-timeline-match {
     margin-top: 24px;
   }
 }
 
+.table-match-wrapper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+}
 .table-match-wrapper .header-wrapper {
   width: 100%;
   height: auto;
   border-bottom: 1px solid #007649;
-}
-.table-match-wrapper .header-table {
-  background: #007649;
-  padding: 6px 30px 6px 20px;
-  position: relative;
-  display: flex;
-  gap: 12px;
-  max-width: max-content;
 }
 .table-match-wrapper .timeline-table-title {
   margin: 0;
@@ -147,6 +138,14 @@
   font-size: 14px;
   line-height: 21px;
   color: #1A202C;
+}
+.table-match-wrapper .header-table {
+  background: #007649;
+  padding: 6px 30px 6px 20px;
+  position: relative;
+  display: flex;
+  gap: 12px;
+  max-width: max-content;
 }
 @media only screen and (max-width: 991px) {
   .table-match-wrapper .header-table {
@@ -215,6 +214,24 @@
 .table-match-wrapper .table-content .table-row:hover {
   background-color: rgba(0, 118, 73, 0.1);
   cursor: pointer;
+}
+.table-match-wrapper .table-content .table-row-football {
+  border-left: 1px solid #EDF2F7;
+  border-right: 1px solid #EDF2F7;
+}
+.table-match-wrapper .table-content .table-row-football:first-child {
+  border-top: 1px solid #EDF2F7;
+}
+@media only screen and (max-width: 991px) {
+  .table-match-wrapper .table-content .table-row-football:first-child {
+    border-top: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .table-match-wrapper .table-content .table-row-football {
+    border-left: none;
+    border-right: none;
+  }
 }
 .table-match-wrapper .table-content .table-column {
   width: 50%;
@@ -631,4 +648,4 @@
   outline: none;
 }
 
-/*# sourceMappingURL=home-2.css.map */
+/*# sourceMappingURL=home-3.css.map */
