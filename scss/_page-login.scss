@@ -19,7 +19,8 @@
   @include mq(max_md) {
     width: 100%;
     flex-direction: column;
-    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 80px;
     .block-login-right {
       order: 1;
       width: 100% !important;
@@ -101,4 +102,7 @@
 
 a.link-news {
   @include style-font1(14px,#fff, 500,21px);
+  @include mq(max_xs) {
+    display: none;
+  }
 }

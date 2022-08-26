@@ -1677,7 +1677,8 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 80px;
   }
   .login-body .block-login-right {
     -webkit-box-ordinal-group: 2;
@@ -1803,4 +1804,9 @@ a.link-news {
   color: #fff;
   font-weight: 500;
   line-height: 21px;
+}
+@media only screen and (max-width: 575px) {
+  a.link-news {
+    display: none;
+  }
 }
