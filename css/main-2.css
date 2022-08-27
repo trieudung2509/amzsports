@@ -420,17 +420,14 @@
   margin: 0;
   padding: 0;
   background-color: #007649;
-}
-.q-and-a-wrapper #q-and-a-tabs .qa-nav li {
   min-width: 300px;
   max-width: 300px;
-  height: auto;
+  max-height: 600px;
+  overflow-y: auto;
 }
-.q-and-a-wrapper #q-and-a-tabs .qa-nav li a {
-  display: block;
+.q-and-a-wrapper #q-and-a-tabs .qa-nav li {
+  height: auto;
   width: 100%;
-  height: 100%;
-  text-decoration: none;
   padding: 16px 20px;
   display: flex;
   gap: 22px;
@@ -443,8 +440,9 @@
   align-items: center;
   background-color: #007649;
   color: #fff;
+  cursor: pointer;
 }
-.q-and-a-wrapper #q-and-a-tabs .qa-nav li a .number {
+.q-and-a-wrapper #q-and-a-tabs .qa-nav li .number {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -452,32 +450,35 @@
   text-align: center;
   color: #fff;
 }
-.q-and-a-wrapper #q-and-a-tabs .qa-nav li a .tab-label {
+.q-and-a-wrapper #q-and-a-tabs .qa-nav li .tab-label {
   margin: 0;
   padding: 0;
   max-width: 230px;
 }
-.q-and-a-wrapper #q-and-a-tabs .qa-nav li a:hover {
+.q-and-a-wrapper #q-and-a-tabs .qa-nav li:hover {
   background-color: rgba(0, 0, 0, 0.75);
 }
-.q-and-a-wrapper #q-and-a-tabs .qa-nav .ui-tabs-active a {
+.q-and-a-wrapper #q-and-a-tabs .qa-nav .active {
   background-color: #fff;
 }
-.q-and-a-wrapper #q-and-a-tabs .qa-nav .ui-tabs-active a:hover {
+.q-and-a-wrapper #q-and-a-tabs .qa-nav .active:hover {
   background-color: #fff;
 }
-.q-and-a-wrapper #q-and-a-tabs .qa-nav .ui-tabs-active a .number {
+.q-and-a-wrapper #q-and-a-tabs .qa-nav .active .number {
   color: #007649;
 }
-.q-and-a-wrapper #q-and-a-tabs .qa-nav .ui-tabs-active a .tab-label {
+.q-and-a-wrapper #q-and-a-tabs .qa-nav .active .tab-label {
   color: #1A202C !important;
 }
-.q-and-a-wrapper .content-tab-wrapper {
+.q-and-a-wrapper .tab-content {
+  min-height: 600px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+.q-and-a-wrapper .content-item {
   background-color: #fff;
   padding: 44px 56px;
   min-height: 600px;
-  max-height: 600px;
-  overflow: hidden auto;
 }
 .q-and-a-wrapper .content-tab-wrapper .block {
   margin-bottom: 32px;
@@ -648,4 +649,4 @@
   outline: none;
 }
 
-/*# sourceMappingURL=home-3.css.map */
+/*# sourceMappingURL=main-2.css.map */

@@ -399,29 +399,27 @@
       margin: 0;
       padding: 0;
       background-color: #007649;
+      min-width: 300px;
+      max-width: 300px;
+      max-height: 600px;
+      overflow-y: auto;
 
       li {
-        min-width: 300px;
-        max-width: 300px;
         height: auto;
-
-        a {
-          display: block;
-          width: 100%;
-          height: 100%;
-          text-decoration: none;
-          padding: 16px 20px;
-          display: flex;
-          gap: 22px;
-          font-style: normal;
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 21px;
-          color: #1A202C;
-          display: flex;
-          align-items: center;
-          background-color: #007649;
-          color: #fff;
+        width: 100%;
+        padding: 16px 20px;
+        display: flex;
+        gap: 22px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1A202C;
+        display: flex;
+        align-items: center;
+        background-color: #007649;
+        color: #fff;
+        cursor: pointer;
 
           .number {
             font-style: normal;
@@ -441,11 +439,10 @@
           &:hover {
             background-color: rgba(0, 0, 0, 0.75);
           }
-        }
       }
-      .ui-tabs-active {
-        a {
-          background-color: #fff;
+
+      .active {
+        background-color: #fff;
 
           &:hover {
             background-color: #fff;
@@ -457,19 +454,23 @@
           .tab-label {
             color: #1A202C !important;
           }
-        }
       }
 
     }
   }
 
-  .content-tab-wrapper {
+  .tab-content {
+    min-height: 600px;
+    max-height: 600px;
+    overflow-y: auto;
+  }
+  .content-item {
     background-color: #fff;
     padding: 44px 56px;
     min-height: 600px;
-    max-height: 600px;
-    overflow: hidden auto;
+  }
 
+  .content-tab-wrapper {
     .block {
       margin-bottom: 32px;
 

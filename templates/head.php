@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css/font-awesome-all.min.css">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/home-3.css">
+		<link rel="stylesheet" type="text/css" href="css/main-2.css">
 		<link rel="stylesheet" type="text/css" href="css/news.css">
 		<link rel="stylesheet" type="text/css" href="css/news-detail.css">
 		<link rel="stylesheet" type="text/css" href="css/footer.css">
