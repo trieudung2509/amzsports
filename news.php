@@ -77,8 +77,8 @@
             <h3 class="news-title">City hit four to see off bournemouth and make it two from two dngid kd gnfdhigfn knfid</h3>
             <span class="time">10 hours ago</span>
           </div>
-      </div>
-      </a>
+        </a>
+    </div>
 
       <div class="pagination">
         <button class="page-item prev-btn disabled">
@@ -100,6 +100,7 @@
           </svg>
         </button>
       </div>
+      <button class="btn-show-more-mb">Load more</button>
     </div>
   </div>
   <?php include "templates/footer.php"; ?>

@@ -163,4 +163,40 @@
     }
   }
 
+  .btn-show-more-mb {
+    display: none;
+    min-width: 176px;
+    height: auto;
+    padding: 12px 0px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    background-color: #AACC00 ;
+    margin: 0px auto;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Gray:900 */
+
+    color: #1A202C;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include mq(max_md) {
+      display: block;
+    }
+
+
+
+  }
+
+
 }
