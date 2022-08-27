@@ -1390,6 +1390,15 @@ button,
   margin-right: 15px;
 }
 
+.football-body {
+  margin-bottom: 180px;
+}
+
+@media only screen and (max-width: 768px) {
+  .football-body  {
+    margin-bottom: 130px;
+  }
+}
 .foot-desc {
   margin-top: 20px;
 }
