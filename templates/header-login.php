@@ -11,11 +11,11 @@
 										</a>
 								</li>
 								<li>
-									<a href="page-login.php">
+									<a href="page-login.html">
 										<button type="button" class="btn btn-login">Log in</button>
 									</a>
 								</li>
-								<li><a href="#">
+								<li><a href="page-login.html">
 									<button type="button" class="btn btn-logup">Sign up</button>
 								</a></li>
 							</ul>
