@@ -976,7 +976,7 @@
 			<div class="container">
 				<h3 class="title">News</h3>
 				<div class="list-news">
-					<a class="news-item" href="news-detail.php">
+					<a class="news-item" href="news-detail.html">
 						<img src="./images/news-image.png" alt="" class="news-image" />
 						<div class="news-info">
 							<span class="league-name">Premier League</span>
@@ -984,7 +984,7 @@
 							<span class="time">10 hours ago</span>
 						</div>
 					</a>
-					<a class="news-item" href="news-detail.php">
+					<a class="news-item" href="news-detail.html">
 						<img src="./images/news-image-2.png" alt="" class="news-image" />
 						<div class="news-info">
 							<span class="league-name">Premier League</span>
@@ -992,7 +992,7 @@
 							<span class="time">10 hours ago</span>
 						</div>
 					</a>
-					<a class="news-item" href="news-detail.php">
+					<a class="news-item" href="news-detail.html">
 						<img src="./images/news-image-3.png" alt="" class="news-image" />
 						<div class="news-info">
 							<span class="league-name">Premier League</span>
@@ -1000,7 +1000,7 @@
 							<span class="time">10 hours ago</span>
 						</div>
 					</a>
-					<a class="news-item" href="news-detail.php">
+					<a class="news-item" href="news-detail.html">
 						<img src="./images/news-image-4.png" alt="" class="news-image" />
 						<div class="news-info">
 							<span class="league-name">Premier League</span>
@@ -1008,7 +1008,7 @@
 							<span class="time">10 hours ago</span>
 						</div>
 					</a>
-					<a class="news-item" href="news-detail.php">
+					<a class="news-item" href="news-detail.html">
 						<img src="./images/news-image-5.png" alt="" class="news-image" />
 						<div class="news-info">
 							<span class="league-name">Premier League</span>
@@ -1016,7 +1016,7 @@
 							<span class="time">10 hours ago</span>
 						</div>
 					</a>
-					<a class="news-item" href="news-detail.php">
+					<a class="news-item" href="news-detail.html">
 						<img src="./images/news-image-6.png" alt="" class="news-image" />
 						<div class="news-info">
 							<span class="league-name">Premier League</span>
