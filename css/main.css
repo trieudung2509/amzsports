@@ -376,7 +376,7 @@ button,
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 40px 0px;
+  padding: 40px 20px;
   position: relative;
 }
 .block-match .record-match .block-item .item-top .hot-match img {
