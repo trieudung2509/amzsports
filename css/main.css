@@ -376,7 +376,7 @@ button,
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 40px 20px;
+  padding: 20px 0px;
   position: relative;
 }
 .block-match .record-match .block-item .item-top .hot-match img {
@@ -1394,11 +1394,6 @@ button,
   margin-bottom: 180px;
 }
 
-@media only screen and (max-width: 768px) {
-  .football-body  {
-    margin-bottom: 130px;
-  }
-}
 .foot-desc {
   margin-top: 20px;
 }
