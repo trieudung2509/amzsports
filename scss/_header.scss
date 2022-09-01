@@ -142,12 +142,12 @@
 					}
 				}
 				.chilren-item {
-					h5 {
+					.mega-menu__menu__title {
 						@include style-font(18px, #1A202C, 600);
 					  line-height: 31px;
 						margin-bottom: 5px;
 					}
-					ul.menu-chil-1 {
+					ul.mega-menu__menu {
 						list-style: none;
 						padding-left: 0px;
 						li {
@@ -190,7 +190,7 @@
 			box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.1);
 			@include mq(max_xs) {
 				left: 0px;
-			width: 103%;
+			  width: 103%;
     		overflow: hidden;
 			}
 			a.header-chil {
@@ -204,12 +204,12 @@
 				}
 			}
 			.chilren-item {
-				h5 {
+				.mega-menu__menu__title {
 					@include style-font(18px, #1A202C, 600);
 					line-height: 31px;
 					margin-bottom: 5px;
 				}
-				ul.menu-chil-1 {
+				ul.mega-menu__menu {
 					list-style: none;
 					padding-left: 0px;
 					li {
@@ -225,6 +225,21 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+
+.mega-menu__grid {
+	display: flex;
+	@include mq(max_xs) {
+		display: block;
+		padding-left: 0px;
+	}
+	& > div {
+		width: calc(25% - 30px);
+		@include mq(max_xs) {
+			width: 100%;
 		}
 	}
 }

@@ -237,28 +237,28 @@ button,
 .main-header .navbar-menu li.nav-item .children-menu a.header-chil i {
   margin-left: 5px;
 }
-.main-header .navbar-menu li.nav-item .children-menu .chilren-item h5 {
+.main-header .navbar-menu li.nav-item .children-menu .chilren-item .mega-menu__menu__title {
   font-size: 18px;
   color: #1A202C;
   font-weight: 600;
   line-height: 31px;
   margin-bottom: 5px;
 }
-.main-header .navbar-menu li.nav-item .children-menu .chilren-item ul.menu-chil-1 {
+.main-header .navbar-menu li.nav-item .children-menu .chilren-item ul.mega-menu__menu {
   list-style: none;
   padding-left: 0px;
 }
-.main-header .navbar-menu li.nav-item .children-menu .chilren-item ul.menu-chil-1 li {
+.main-header .navbar-menu li.nav-item .children-menu .chilren-item ul.mega-menu__menu li {
   margin-bottom: 5px;
 }
-.main-header .navbar-menu li.nav-item .children-menu .chilren-item ul.menu-chil-1 li a {
+.main-header .navbar-menu li.nav-item .children-menu .chilren-item ul.mega-menu__menu li a {
   font-size: 14px;
   color: #1A202C;
   font-weight: 400;
   line-height: 31px;
   text-decoration: none;
 }
-.main-header .navbar-menu li.nav-item .children-menu .chilren-item ul.menu-chil-1 li a:hover {
+.main-header .navbar-menu li.nav-item .children-menu .chilren-item ul.mega-menu__menu li a:hover {
   color: #007649;
 }
 .main-header .menu-block {
@@ -305,29 +305,49 @@ button,
 .main-header .block-sub-menu .children-menu a.header-chil i {
   margin-left: 5px;
 }
-.main-header .block-sub-menu .children-menu .chilren-item h5 {
+.main-header .block-sub-menu .children-menu .chilren-item .mega-menu__menu__title {
   font-size: 18px;
   color: #1A202C;
   font-weight: 600;
   line-height: 31px;
   margin-bottom: 5px;
 }
-.main-header .block-sub-menu .children-menu .chilren-item ul.menu-chil-1 {
+.main-header .block-sub-menu .children-menu .chilren-item ul.mega-menu__menu {
   list-style: none;
   padding-left: 0px;
 }
-.main-header .block-sub-menu .children-menu .chilren-item ul.menu-chil-1 li {
+.main-header .block-sub-menu .children-menu .chilren-item ul.mega-menu__menu li {
   margin-bottom: 5px;
 }
-.main-header .block-sub-menu .children-menu .chilren-item ul.menu-chil-1 li a {
+.main-header .block-sub-menu .children-menu .chilren-item ul.mega-menu__menu li a {
   font-size: 14px;
   color: #1A202C;
   font-weight: 400;
   line-height: 31px;
   text-decoration: none;
 }
-.main-header .block-sub-menu .children-menu .chilren-item ul.menu-chil-1 li a:hover {
+.main-header .block-sub-menu .children-menu .chilren-item ul.mega-menu__menu li a:hover {
   color: #007649;
+}
+
+.mega-menu__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (max-width: 575px) {
+  .mega-menu__grid {
+    display: block;
+    padding-left: 0px;
+  }
+}
+.mega-menu__grid > div {
+  width: calc(25% - 30px);
+}
+@media only screen and (max-width: 575px) {
+  .mega-menu__grid > div {
+    width: 100%;
+  }
 }
 
 /* -----------------------------------------------------------
