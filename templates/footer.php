@@ -1,5 +1,5 @@
- <!-- start footer block -->
- <footer class="footer">
+<!-- start footer block -->
+<footer class="footer">
    <div class="container">
      <div class="footer-wrapper">
        <div class="footer-content">
@@ -37,7 +37,6 @@
    </div>
  </footer>
  <!-- /.footer -->
-
  <!-- JAVASCRIPT-->
  <script src="js/jquery-3.3.1.min.js"></script>
  <script src="js/jquery-ui.min.js"></script>
