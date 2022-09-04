@@ -63,6 +63,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  cursor: pointer !important;
 }
 @media only screen and (max-width: 991px) {
   .list-tab-header .date-picker-wrapper {
@@ -101,6 +102,32 @@
   background-color: #007649;
 }
 .list-tab-header .date-picker-wrapper .btn-picker:focus {
+  outline: none;
+}
+.list-tab-header .date-picker-wrapper input[type=date]::-webkit-inner-spin-button,
+.list-tab-header .date-picker-wrapper input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+}
+.list-tab-header .date-picker-wrapper input[type=date]::-webkit-inner-spin-button:focus,
+.list-tab-header .date-picker-wrapper input[type=date]::-webkit-calendar-picker-indicator:focus {
+  outline: none;
+}
+.list-tab-header .date-picker-wrapper #date-picker {
+  border: none !important;
+  background-color: transparent !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+  display: inline-block;
+  margin-left: 16px;
+  cursor: pointer !important;
+}
+.list-tab-header .date-picker-wrapper #date-picker:focus {
   outline: none;
 }
 
