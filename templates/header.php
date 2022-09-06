@@ -42,42 +42,42 @@
 						<ul class="navbar-nav">
 							<li class="nav-item football" data-menu="football">
 								<a class="nav-link" aria-current="page" href="#">
-										<img src="../images/football.png" alt=""> <span>Football</span>
+										<span>Football</span>
 								</a>
 							</li>
 							<li class="nav-item tennis" data-menu="tennis">
 								<a class="nav-link" aria-current="page" href="#">
-										<img src="../images/tennis.png" alt=""> <span>Tennis</span>
+										<span>Tennis</span>
 								</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" aria-current="page" href="#">
-										<img src="../images/basketball.png" alt=""> <span>Basketball</span>
+										<span>Basketball</span>
 								</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" aria-current="page" href="#">
-										<img src="../images/ice-hockey.png" alt=""> <span>Ice Hockey</span>
+										<span>Ice Hockey</span>
 								</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" aria-current="page" href="#">
-										<img src="../images/baseball.png" alt=""> <span>Baseball</span>
+										<span>Baseball</span>
 								</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" aria-current="page" href="#">
-										<img src="../images/fighting.png" alt="">   <span>Fighting</span>
+										<span>Fighting</span>
 								</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" aria-current="page" href="#">
-										<img src="../images/other.png" alt=""> <span>Other</span>
+										<span>Other</span>
 								</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" aria-current="page" href="../news.php">
-										<img src="../images/news.png" alt="">  <span>News</span>
+										<span>News</span>
 								</a>
 							</li>
 						</ul>

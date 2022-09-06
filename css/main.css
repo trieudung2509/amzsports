@@ -170,13 +170,13 @@ button,
   }
 }
 .main-header .navbar-menu li.nav-item {
-  padding: 10px 0px 5px 15px;
+  padding: 10px 18px 5px 18px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 @media only screen and (max-width: 575px) {
   .main-header .navbar-menu li.nav-item {
-    width: 160px;
+    width: 130px;
   }
 }
 .main-header .navbar-menu li.nav-item.active, .main-header .navbar-menu li.nav-item:hover {
