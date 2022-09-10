@@ -767,7 +767,9 @@ button,
   display: flex;
   padding-left: 0px;
   list-style: none;
-  padding: 15px;
+  margin: 0;
+  padding: 0;
+  padding: 16px;
 }
 .block-play .match-play .match-server ul.server-list li {
   margin-right: 10px;
@@ -790,6 +792,7 @@ button,
 
 .block-result {
   text-align: center;
+  margin-top: 16px;
 }
 .block-result .item-result {
   display: -webkit-box;
@@ -1208,9 +1211,15 @@ button,
   color: #fff;
   font-weight: 400;
   line-height: 21px;
-  padding: 5px 15px;
+  /* padding: 5px 15px; */
   text-align: center;
   background: #007649;
+  display: inline-flex;
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
 }
 .recent-meeting .recent-mobile ul.meeting-list li .meeting-item .meeting-scord .bottom-premier-item1 {
   display: -webkit-box;
@@ -1262,8 +1271,14 @@ button,
   font-size: 14px;
   color: #fff;
   font-weight: 400;
-  line-height: 21px;
-  padding: 5px 7px;
+  /* line-height: 21px;
+  padding: 5px 7px; */
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .recent-meeting .tbody-match tr th, .recent-meeting .tbody-match tr td {
   font-size: 14px;
