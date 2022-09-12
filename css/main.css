@@ -1849,3 +1849,42 @@ a.link-news {
     display: none;
   }
 }
+
+.register-by-socical {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.register-by-socical .icon-login {
+  display: block;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edf2f7;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.register-by-socical .icon-login:hover {
+  text-decoration: none;;
+}
+
+.login-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #F91E4E;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 24px
+}
