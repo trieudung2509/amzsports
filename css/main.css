@@ -361,12 +361,12 @@ button,
   padding: 60px 0px;
   background-size: cover;
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 992px) {
   .block-match {
     overflow: scroll;
   }
 }
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 992px) {
   .block-match .row-match {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -377,6 +377,17 @@ button,
             flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+        overflow: scroll;
+  }
+
+  .block-match .record-match .block-item {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .block-match .record-match {
+    width: 192px !important;
+    min-width: 192px !important;
   }
 }
 .block-match .record-match {
