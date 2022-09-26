@@ -590,6 +590,7 @@ button,
   font-weight: 400;
   line-height: 40px;
 }
+
 .body-live .live-left #myTabContent .tab-all-game ul.match-tranning .tbody-match tr th:last-child .bottom-premier-item, .body-live .live-left #myTabContent .tab-all-game ul.match-tranning .tbody-match tr td:last-child .bottom-premier-item {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -813,10 +814,16 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+        width: 50%;
+        justify-content: flex-end;
+        padding-right: 24px;
 }
 .block-result .item-result .bottom-premier-item img {
-  width: 15%;
   margin-left: 10px;
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+  object-fit: cover;
 }
 .block-result .item-result .bottom-premier-item span {
   font-size: 20px;
@@ -825,6 +832,9 @@ button,
   line-height: 30px;
 }
 @media only screen and (max-width: 575px) {
+  .block-result .item-result .bottom-premier-item {
+    padding-right: 12px;
+  }
   .block-result .item-result .bottom-premier-item span {
     font-size: 14px;
     color: #1A202C;
@@ -836,6 +846,11 @@ button,
   background: #007649;
   padding: 5px 15px;
   text-align: center;
+  width: 10%;
+  max-width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .block-result .item-result .bottom-point span {
   font-size: 24px;
@@ -861,10 +876,16 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          width: 50%;
+          justify-content: flex-start;
+          padding-left: 24px;;
 }
 .block-result .item-result .bottom-premier-item1 img {
-  width: 15%;
   margin-right: 10px;
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+  object-fit: cover;
 }
 .block-result .item-result .bottom-premier-item1 span {
   font-size: 20px;
@@ -873,6 +894,9 @@ button,
   line-height: 30px;
 }
 @media only screen and (max-width: 575px) {
+  .block-result .item-result .bottom-premier-item1 {
+    padding-left: 12px;
+  }
   .block-result .item-result .bottom-premier-item1 span {
     font-size: 14px;
     color: #1A202C;
