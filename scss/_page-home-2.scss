@@ -487,20 +487,17 @@
   }
 
   .tab-content {
-    min-height: 600px;
     max-height: 600px;
     overflow-y: auto;
   }
   .content-item {
     background-color: #fff;
-    padding: 44px 56px;
-    min-height: 600px;
+    padding: 20px 56px;
   }
 
   .content-tab-wrapper {
     .block {
-      margin-bottom: 32px;
-
+      margin-bottom: 16px;
       .content-title {
         margin: 0;
         padding: 0;

@@ -498,17 +498,15 @@
   color: #1A202C !important;
 }
 .q-and-a-wrapper .tab-content {
-  min-height: 600px;
   max-height: 600px;
   overflow-y: auto;
 }
 .q-and-a-wrapper .content-item {
   background-color: #fff;
-  padding: 44px 56px;
-  min-height: 600px;
+  padding: 20px 56px;
 }
 .q-and-a-wrapper .content-tab-wrapper .block {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 .q-and-a-wrapper .content-tab-wrapper .block .content-title {
   margin: 0;
