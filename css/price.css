@@ -177,11 +177,13 @@
   align-items: center;
   gap: 40px;
   justify-content: center;
+  margin-top: 16px;
 }
 @media only screen and (max-width: 991px) {
   .page-price-wrapper .seclect-plan-wrapper .list-plan {
     flex-direction: column;
     gap: 16px;
+    margin-top: 12px;
   }
 }
 .page-price-wrapper .seclect-plan-wrapper .list-plan .active {

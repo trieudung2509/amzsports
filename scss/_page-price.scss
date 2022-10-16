@@ -162,10 +162,12 @@
       align-items: center;
       gap: 40px;
       justify-content: center;
+      margin-top: 16px;
 
       @include mq(max_md) {
         flex-direction: column;
         gap: 16px;
+        margin-top: 12px;
       }
 
 
