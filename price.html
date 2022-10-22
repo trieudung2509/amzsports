@@ -387,14 +387,49 @@
           </div>
 
           <div class="choose-payment-type-wrapper">
-            <div id="choose-payment-type-tabs">
-              <ul class="list-payment-type">
-                <li>
-                  <a href="#tabs-1" class="payment-type-item">
-                    <div class="checked-box">
+            <ul id="choose-paymen-accordion">
+              <li class="accordion-item">
+                <div class="payment-type-item">
+                  <div class="checked-box">
+                    <span class="icon-checked">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="1" width="22" height="22" rx="11" fill="#007649" />
+                        <g clip-path="url(#clip0_409_9784)">
+                          <path d="M7.33301 12.0001L10.6663 15.3334L17.333 8.66675" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_409_9784">
+                            <rect width="16" height="16" fill="white" transform="translate(4 4)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="payment-info">
+                    <h5 class="payment-title">Credit Card</h5>
+                    <div class="list-payment">
+                      <div class="payment-item">
+                        <img class="image-payment-credit" src="./images/payment-image-1.png" alt="">
+                      </div>
+                      <div class="payment-item">
+                        <img class="image-payment-visa" src="./images/payment-image-2.png" alt="">
+                      </div>
+                      <div class="payment-item">
+                        <img class="image-payment-jcb" src="./images/payment-image-3.png" alt="">
+                      </div>
+                      <div class="payment-item">
+                        <img class="image-payment-union" src="./images/payment-image-4.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="accordion-content"></div> -->
+              </li>
+              <li class="accordion-item">
+                <div class="payment-type-item non-efundable-tab">
+                  <div class="checked-box">
+                    <span class="checked">
                       <span class="icon-checked">
-
-
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect x="1" y="1" width="22" height="22" rx="11" fill="#007649" />
                           <g clip-path="url(#clip0_409_9784)">
@@ -406,107 +441,28 @@
                             </clipPath>
                           </defs>
                         </svg>
-
                       </span>
-                    </div>
-                    <div class="payment-info">
-                      <h5 class="payment-title">Credit Card</h5>
-                      <div class="list-payment">
-                        <div class="payment-item">
-                          <img class="image-payment-credit" src="./images/payment-image-1.png" alt="">
-                        </div>
-                        <div class="payment-item">
-                          <img class="image-payment-visa" src="./images/payment-image-2.png" alt="">
-                        </div>
-                        <div class="payment-item">
-                          <img class="image-payment-jcb" src="./images/payment-image-3.png" alt="">
-                        </div>
-                        <div class="payment-item">
-                          <img class="image-payment-union" src="./images/payment-image-4.png" alt="">
-                        </div>
+                    </span>
+                  </div>
+                  <div class="payment-info">
+                    <h5 class="payment-title">Non Refundable</h5>
+                    <div class="list-payment">
+                      <div class="payment-item">
+                        <img class="image-payment-paypal" src="./images/payment-image-6.png" alt="">
+                      </div>
+                      <div class="payment-item">
+                        <img class="image-payment-paypal" src="./images/payment-image-7.png" alt="">
+                      </div>
+                      <div class="payment-item">
+                        <img class="image-payment-paypal" src="./images/payment-image-8.png" alt="">
+                      </div>
+                      <div class="payment-item">
+                        <img class="image-payment-paypal" src="./images/payment-image-9.png" alt="">
                       </div>
                     </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#tabs-2" class="payment-type-item">
-                    <div class="checked-box">
-                      <span class="checked">
-                        <span class="icon-checked">
-
-
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="1" y="1" width="22" height="22" rx="11" fill="#007649" />
-                            <g clip-path="url(#clip0_409_9784)">
-                              <path d="M7.33301 12.0001L10.6663 15.3334L17.333 8.66675" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </g>
-                            <defs>
-                              <clipPath id="clip0_409_9784">
-                                <rect width="16" height="16" fill="white" transform="translate(4 4)" />
-                              </clipPath>
-                            </defs>
-                          </svg>
-
-
-                        </span>
-                      </span>
-                    </div>
-                    <div class="payment-info">
-                      <h5 class="payment-title">Paypal</h5>
-                      <div class="list-payment">
-                        <div class="payment-item">
-                          <img class="image-payment-paypal" src="./images/payment-image-5.png" alt="">
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#tabs-3" class="payment-type-item non-efundable-tab">
-                    <div class="checked-box">
-                      <span class="checked">
-                        <span class="icon-checked">
-
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="1" y="1" width="22" height="22" rx="11" fill="#007649" />
-                            <g clip-path="url(#clip0_409_9784)">
-                              <path d="M7.33301 12.0001L10.6663 15.3334L17.333 8.66675" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </g>
-                            <defs>
-                              <clipPath id="clip0_409_9784">
-                                <rect width="16" height="16" fill="white" transform="translate(4 4)" />
-                              </clipPath>
-                            </defs>
-                          </svg>
-
-
-                        </span>
-                      </span>
-                    </div>
-                    <div class="payment-info">
-                      <h5 class="payment-title">Non Refundable</h5>
-                      <div class="list-payment">
-                        <div class="payment-item">
-                          <img class="image-payment-paypal" src="./images/payment-image-6.png" alt="">
-                        </div>
-                        <div class="payment-item">
-                          <img class="image-payment-paypal" src="./images/payment-image-7.png" alt="">
-                        </div>
-                        <div class="payment-item">
-                          <img class="image-payment-paypal" src="./images/payment-image-8.png" alt="">
-                        </div>
-                        <div class="payment-item">
-                          <img class="image-payment-paypal" src="./images/payment-image-9.png" alt="">
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <div id="tabs-1"></div>
-              <div id="tabs-2"></div>
-              <div id="tabs-3">
-                <div class="non-efundable-content-tab">
+                  </div>
+                </div>
+                <div class="accordion-content non-efundable-content-tab">
                   <h4 class="title"><span class="highlight">Select</span> a cryptocurrency to pay:</h4>
                   <div class="list-chain">
                     <div class="chain-item">
@@ -545,10 +501,41 @@
                       </div>
                     </div>
                   </div>
-
                 </div>
-              </div>
-            </div>
+              </li>
+              <li class="accordion-item">
+                <div class="payment-type-item">
+                  <div class="checked-box">
+                    <span class="checked">
+                      <span class="icon-checked">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect x="1" y="1" width="22" height="22" rx="11" fill="#007649" />
+                          <g clip-path="url(#clip0_409_9784)">
+                            <path d="M7.33301 12.0001L10.6663 15.3334L17.333 8.66675" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_409_9784">
+                              <rect width="16" height="16" fill="white" transform="translate(4 4)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+
+                      </span>
+                    </span>
+                  </div>
+                  <div class="payment-info">
+                    <h5 class="payment-title">Paypal</h5>
+                    <div class="list-payment">
+                      <div class="payment-item">
+                        <img class="image-payment-paypal" src="./images/payment-image-5.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="accordion-content"></div> -->
+              </li>
+
+            </ul>
           </div>
           <div class="payment-table-detail">
             <div class="table-row">
@@ -1075,9 +1062,25 @@
  <script src="js/main.js"></script></body>
 <script>
   $(function() {
-    $("#choose-payment-type-tabs").tabs({
-      active: 1
+    $("#choose-paymen-accordion").accordion({
+      active: 1,
     });
+
+    const accordionItemActive = $('.ui-accordion-header-active');
+    accordionItemActive.css('border', 'none')
+    accordionItemActive.parent().css({'border': '1px solid #007649'})
+
+    $(".accordion-item").on('click', function() {
+      $(".accordion-item").each(function(){
+        $(this).css('border', 'none')
+        $(this).children().css('border', '1px solid #E2E8F0')
+      })
+      const chilren = $(this).children()
+      chilren.css('border', 'none')
+      $(this).css({'border': '1px solid #007649'})
+
+    })
+
   });
 </script>
 

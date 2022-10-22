@@ -1006,26 +1006,6 @@
   height: 24px;
   z-index: 2;
 }
-.choose-payment-type-wrapper .ui-tabs-active a {
-  border: 1px solid #007649;
-}
-.choose-payment-type-wrapper .ui-tabs-active a .icon-checked {
-  display: block;
-}
-.choose-payment-type-wrapper .ui-tabs-active .non-efundable-tab {
-  border-bottom: none;
-  position: relative;
-  z-index: 999;
-  top: 0;
-  left: 0;
-}
-@media only screen and (max-width: 991px) {
-  .choose-payment-type-wrapper .ui-tabs-active .non-efundable-tab {
-    padding-top: 10px;
-    top: 0;
-    height: auto;
-  }
-}
 .choose-payment-type-wrapper .payment-type-item {
   padding: 10px 12px 10px 16px;
   display: flex;
@@ -1127,10 +1107,8 @@
   width: 100%;
   height: auto;
   background: #FFFFFF;
-  border: 1px solid #007649;
   padding: 0px 24px 24px 56px;
   position: relative;
-  top: -6px;
 }
 @media only screen and (max-width: 991px) {
   .choose-payment-type-wrapper .non-efundable-content-tab {
@@ -1139,7 +1117,6 @@
     margin-top: 0;
     position: relative;
     padding-top: 10px;
-    top: -10px;
   }
 }
 .choose-payment-type-wrapper .non-efundable-content-tab .title {
@@ -1385,6 +1362,53 @@
   align-items: center;
   width: 16px;
   height: 16px;
+}
+
+#choose-paymen-accordion {
+  margin: 24px 0px;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+#choose-paymen-accordion .ui-accordion-header-icon {
+  display: none !important;
+}
+#choose-paymen-accordion .accordion-item {
+  margin-bottom: 12px !important;
+  border-radius: 0;
+  border: none;
+}
+#choose-paymen-accordion .accordion-item:last-of-type {
+  margin-bottom: 0 !important;
+}
+#choose-paymen-accordion .ui-state-default {
+  width: 100% !important;
+  height: auto !important;
+  display: flex;
+  justify-content: flex-start !important;
+}
+#choose-paymen-accordion li {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 991px) {
+  #choose-paymen-accordion li {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0;
+  }
+}
+#choose-paymen-accordion li .icon-checked {
+  display: none;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+}
+#choose-paymen-accordion .ui-accordion-header-active .icon-checked {
+  display: block !important;
 }
 
 /*# sourceMappingURL=price.css.map */
