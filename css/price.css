@@ -1521,7 +1521,7 @@
   margin-left: 16px;
 }
 .popup-content__description .shadow {
-  width: 232px;
+  width: 235px;
   height: 23px;
   border: none;
   position: absolute;
@@ -1541,6 +1541,8 @@
 }
 .popup-content__description .green-shadown {
   background: rgba(24, 183, 69, 0.15);
+  bottom: 5px;
+  right: -5px;
 }
 .popup-content__description .red-shadown {
   background: #E34B31;
