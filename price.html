@@ -1050,6 +1050,23 @@
           </div>
         </div>
         <button class="btn-grap">Grab the deal</button>
+        <div class="popup-timer-countdown">
+          <span class="label">The match will start in</span>
+          <div class="list-time">
+            <div class="time-item-wrapper">
+              <span class="time" id="popup-price-time-hour"></span>
+              <span class="label">Hour</span>
+            </div>
+            <div class="time-item-wrapper">
+              <span class="time" id="popup-price-time-minute"></span>
+              <span class="label">Minute</span>
+            </div>
+            <div class="time-item-wrapper">
+              <span class="time" id="popup-price-time-second"></span>
+              <span class="label">Second</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1098,6 +1115,7 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
  <script src="js/main.js"></script></body>
 <script>
+  countdownTimeStart()
   $(function() {
     $("#choose-paymen-accordion").accordion({
       active: 1,
@@ -1119,6 +1137,36 @@
     })
 
   });
+  function countdownTimeStart() {
+    var countDownDate = new Date("2022/11/28 16:20:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+      // Get todays date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now an the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      document.getElementById("popup-price-time-hour").innerHTML = String(hours).padStart(2, '0');
+      document.getElementById("popup-price-time-minute").innerHTML = String(minutes).padStart(2, '0');
+      document.getElementById("popup-price-time-second").innerHTML = String(seconds).padStart(2, '0');
+
+      // If the count down is over, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  }
 </script>
 
 </html>
