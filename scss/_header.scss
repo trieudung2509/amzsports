@@ -20,6 +20,10 @@
 	background: url('../images/header-bg.png') no-repeat;
 	background-size: cover;
   background-position: 60% 100%;
+	position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
 	.navbar-top {
 		.navbar-logo {
 			@include mq(max_xs) {
