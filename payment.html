@@ -1,0 +1,498 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Amzsports</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link data-n-head="ssr" rel="icon" type="image/x-icon" href="../images/logo.png">
+
+		<!-- STYLESHEET -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome-all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/main-2.css">
+		<link rel="stylesheet" type="text/css" href="css/news.css">
+		<link rel="stylesheet" type="text/css" href="css/news-detail.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
+		<link rel="stylesheet" type="text/css" href="css/price.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+		<!--if lt IE 9
+		script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+		script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+		-->
+	</head>
+
+<body>
+  <header class="main-header">
+	<div class="container">
+		<div class="row g-0 justify-content-between align-items-center">
+			<nav class="navbar navbar-top">
+					<a href="#" class="navbar-logo">
+								<img src="images/logo.png" alt="">
+							</a>
+					<div class="header-right-button">
+						<ul class="main-nav">
+								<li>
+									<div class="time-zone">
+										<span>Time zone:</span>
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Saigon
+										</a>
+										<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+											<li><a class="dropdown-item" href="#">Sai gon 1</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<a href="page-login.html">
+										<button type="button" class="btn btn-login">Log in</button>
+									</a>
+								</li>
+								<li><a href="page-login.html">
+									<button type="button" class="btn btn-logup">Sign up</button>
+								</a></li>
+								<!-- <li class="avatar-logined">
+									<a href="">
+										<img src="../images/avatar.png" />
+									</a>
+								</li> -->
+							</ul>
+					</div>
+			</nav>
+		</div>
+		<div class="row">
+			<div class="menu-block">
+					<nav class="navbar navbar-expand-lg navbar-menu">
+						<ul class="navbar-nav">
+							<li class="nav-item football" data-menu="football">
+								<a class="nav-link" aria-current="page" href="#">
+										<span>Football</span>
+								</a>
+							</li>
+							<li class="nav-item tennis" data-menu="tennis">
+								<a class="nav-link" aria-current="page" href="#">
+										<span>Tennis</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">
+										<span>Basketball</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">
+										<span>Ice Hockey</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">
+										<span>Baseball</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">
+										<span>Fighting</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">
+										<span>Other</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="../news.php">
+										<span>News</span>
+								</a>
+							</li>
+						</ul>
+				</nav>
+				<div class="block-sub-menu">
+					<div class="children-menu football" data-hover="football">
+							<a href="" class="header-chil">View all football <i class="far fa-arrow-right"></i></a>
+							<div class="row">
+									<div class="mega-menu__grid chilren-item">
+										<div>
+												<ul class="mega-menu__menu">
+													<li class="mega-menu__menu__title">British</li>
+													<li><a href="">English Football on TV</a></li>
+													<li><a href="">Premier League on TV</a></li>
+													<li><a href="">Championship on TV</a></li>
+													<li><a href="">League One on TV</a></li>
+													<li><a href="">League Two on TV</a></li>
+													<li><a href="">FA Cup on TV</a></li>
+													<li><a href="">Carabao Cup on TV</a></li>
+													<li><a href="">Scottish Football on TV</a></li>
+													<li><a href="">Welsh Football on TV</a></li>
+													<li><a href="">Men's Football on TV</a></li>
+													<li><a href="">Non-League Football on TV</a></li>
+													<li><a href="">Reserves &amp; Youth Football on TV</a></li>
+												</ul>
+										</div>
+										<div>
+												<ul class="mega-menu__menu">
+													<li class="mega-menu__menu__title">European</li>
+													<li><a href="">Champions League on TV</a></li>
+													<li><a href="">Europa League on TV</a></li>
+													<li><a href="">Europa Conference League</a></li>
+													<li><a href="">UEFA Super Cup on TV</a></li>
+													<li><a href="">Spanish Football on TV</a></li>
+													<li><a href="">Italian Football on TV</a></li>
+													<li><a href="">German Football on TV</a></li>
+													<li><a href="">French Football on TV</a></li>
+													<li><a href="">Dutch Football on TV</a></li>
+													<li><a href="">Portuguese Football on TV</a></li>
+													<li><a href="">Russian Football on TV</a></li>
+													<li><a href="">Irish Football on TV</a></li>
+												</ul>
+										</div>
+										<div>
+												<ul class="mega-menu__menu">
+													<li class="mega-menu__menu__title">Rest of the World</li>
+													<li><a href="">MLS Football on TV</a></li>
+													<li><a href="">A-League Football on TV</a></li>
+													<li><a href="">South American Football on TV</a></li>
+													<li><a href="">Chinese Football on TV</a></li>
+												</ul>
+												<ul class="mega-menu__menu">
+													<li class="mega-menu__menu__title">Women's Football</li>
+													<li><a href="">Women's Football on TV</a></li>
+													<li><a href="">FA WSL on TV</a></li>
+													<li><a href="">Women's FA Cup on TV</a></li>
+													<li><a href="">Women's Champions League</a></li>
+													<li><a href="">Women's World Cup on TV</a></li>
+												</ul>
+										</div>
+										<div>
+												<ul class="mega-menu__menu">
+													<li class="mega-menu__menu__title">International</li>
+													<li><a href="">International Football on TV</a></li>
+													<li><a href="">Women's Euro 2022 on TV</a></li>
+													<li><a href="">World Cup 2022 on TV</a></li>
+													<li><a href="">Euro 2020 on TV</a></li>
+													<li><a href="">UEFA Nations League on TV</a></li>
+													<li><a href="">UEFA U21 Championship on TV</a></li>
+													<li><a href="">Copa America on TV</a></li>
+													<li><a href="">Africa Cup of Nations on TV</a></li>
+													<li><a href="">CONCACAF Gold Cup on TV</a></li>
+													<li><a href="">Olympic Football on TV</a></li>
+													<li><a href="">FIFA Club World Cup on TV</a></li>
+												</ul>
+										</div>
+									</div>
+							</div>
+						</div>
+						<div class="children-menu tennis" data-hover="tennis">
+							<a href="" class="header-chil">View all tennis <i class="far fa-arrow-right"></i></a>
+							<div class="row">
+									<div class="mega-menu__grid chilren-item">
+										<div>
+												<ul class="mega-menu__menu">
+													<li class="mega-menu__menu__title">British</li>
+													<li><a href="">English Football on TV</a></li>
+													<li><a href="">Premier League on TV</a></li>
+													<li><a href="">Championship on TV</a></li>
+													<li><a href="">League One on TV</a></li>
+													<li><a href="">League Two on TV</a></li>
+													<li><a href="">FA Cup on TV</a></li>
+													<li><a href="">Carabao Cup on TV</a></li>
+													<li><a href="">Scottish Football on TV</a></li>
+													<li><a href="">Welsh Football on TV</a></li>
+													<li><a href="">Men's Football on TV</a></li>
+													<li><a href="">Non-League Football on TV</a></li>
+													<li><a href="">Reserves &amp; Youth Football on TV</a></li>
+												</ul>
+										</div>
+										<div>
+												<ul class="mega-menu__menu">
+													<li class="mega-menu__menu__title">European</li>
+													<li><a href="">Champions League on TV</a></li>
+													<li><a href="">Europa League on TV</a></li>
+													<li><a href="">Europa Conference League</a></li>
+													<li><a href="">UEFA Super Cup on TV</a></li>
+													<li><a href="">Spanish Football on TV</a></li>
+													<li><a href="">Italian Football on TV</a></li>
+													<li><a href="">German Football on TV</a></li>
+													<li><a href="">French Football on TV</a></li>
+													<li><a href="">Dutch Football on TV</a></li>
+													<li><a href="">Portuguese Football on TV</a></li>
+													<li><a href="">Russian Football on TV</a></li>
+													<li><a href="">Irish Football on TV</a></li>
+												</ul>
+										</div>
+										<div>
+												<ul class="mega-menu__menu">
+													<li class="mega-menu__menu__title">Rest of the World</li>
+													<li><a href="">MLS Football on TV</a></li>
+													<li><a href="">A-League Football on TV</a></li>
+													<li><a href="">South American Football on TV</a></li>
+													<li><a href="">Chinese Football on TV</a></li>
+												</ul>
+												<ul class="mega-menu__menu">
+													<li class="mega-menu__menu__title">Women's Football</li>
+													<li><a href="">Women's Football on TV</a></li>
+													<li><a href="">FA WSL on TV</a></li>
+													<li><a href="">Women's FA Cup on TV</a></li>
+													<li><a href="">Women's Champions League</a></li>
+													<li><a href="">Women's World Cup on TV</a></li>
+												</ul>
+										</div>
+										<div>
+												<ul class="mega-menu__menu">
+													<li class="mega-menu__menu__title">International</li>
+													<li><a href="">International Football on TV</a></li>
+													<li><a href="">Women's Euro 2022 on TV</a></li>
+													<li><a href="">World Cup 2022 on TV</a></li>
+													<li><a href="">Euro 2020 on TV</a></li>
+													<li><a href="">UEFA Nations League on TV</a></li>
+													<li><a href="">UEFA U21 Championship on TV</a></li>
+													<li><a href="">Copa America on TV</a></li>
+													<li><a href="">Africa Cup of Nations on TV</a></li>
+													<li><a href="">CONCACAF Gold Cup on TV</a></li>
+													<li><a href="">Olympic Football on TV</a></li>
+													<li><a href="">FIFA Club World Cup on TV</a></li>
+												</ul>
+										</div>
+									</div>
+							</div>
+						</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</header>
+<!-- /.main-header -->  <div class="page-payment-wrapper">
+    <div class="container">
+      <div class="header-block-wrapper">
+        <div class="left-block">
+          <h3 class="title">Send USDC on Ethereum network</h3>
+          <p class="description">Open your crypto wallet and scan the QR code, or copy the USDC address below to make a payment</p>
+        </div>
+        <div class="right-block">
+          <div id="progress"></div>
+        </div>
+      </div>
+
+      <div class="description-detail-block">
+        <span class="icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66602 9.99941C1.66602 5.40024 5.39935 1.66608 9.99935 1.66608C14.6077 1.66608 18.3327 5.40024 18.3327 9.99941C18.3327 14.6002 14.6077 18.3327 9.99935 18.3327C5.39935 18.3327 1.66602 14.6002 1.66602 9.99941ZM9.26562 6.84109C9.26562 6.44192 9.59896 6.10776 9.99896 6.10776C10.399 6.10776 10.724 6.44192 10.724 6.84109V10.5244C10.724 10.9253 10.399 11.2494 9.99896 11.2494C9.59896 11.2494 9.26562 10.9253 9.26562 10.5244V6.84109ZM10.0068 13.9002C9.59844 13.9002 9.27344 13.5669 9.27344 13.1669C9.27344 12.7669 9.59844 12.4419 9.99844 12.4419C10.4068 12.4419 10.7318 12.7669 10.7318 13.1669C10.7318 13.5669 10.4068 13.9002 10.0068 13.9002Z" fill="#461A53" />
+          </svg>
+        </span>
+        <p class="description">Only send USDC to this address from Ethereum network. Don’t send USDC from other networks or it will result in a loss of funds.</p>
+      </div>
+
+      <div class="block-payment-wrapper">
+        <img src="./images/qa-code-image.png" alt="" class="qa-code-image">
+        <div class="list-item">
+          <div class="item">
+            <div class="left-content">
+              <span class="label">USDC Address</span>
+              <span class="value">0x48374abc438053408kdjkldfjglkdfjgl584545</span>
+            </div>
+            <button class="btn-copy">Copy</button>
+          </div>
+          <div class="item">
+            <div class="left-content">
+              <span class="label">Total Amount</span>
+              <span class="value">50.0 USDC</span>
+            </div>
+            <button class="btn-copy">Copy</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="complete-your-checkout-wrapper">
+        <h4 class="title">Have you completed your checkout</h4>
+        <p class="description">
+          Please upload your proof of payment (you can upload your receipt screenshot or paste your receipt link here)
+        </p>
+
+        <input type="text" name="" value="" placeholder="Enter receipt link" class="input-text">
+
+        <div class="input-file-wrapper">
+          <label for="file-upload" class="custom-file-upload">
+            Choose file
+          </label>
+          <input id="file-upload" type="file" />
+        </div>
+
+        <div class="submit-wrapper">
+          <button class="btn-submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- start footer block -->
+<footer class="footer">
+   <div class="container">
+     <div class="footer-wrapper">
+       <div class="footer-content">
+         <img src="../images/logo.png" alt="" class="footer-logo">
+         <div class="footer-description">
+           <p class="footer-line">AMZSport is the world’s only sports-focused live TV streaming service with top leagues and teams.</p>
+           <p class="footer-line">Email: bingsport.com@gmail.com.</p>
+         </div>
+         <ul class="menu-footer">
+           <li>
+             <a href="#">Disclaimer</a>
+           </li>
+           <li>
+             <a href="#">Privacy Policy</a>
+           </li>
+           <li>
+             <a href="#">Terms of use</a>
+           </li>
+           <li>
+             <a href="#">Account</a>
+           </li>
+           <li>
+             <a href="#">Contact</a>
+           </li>
+           <li>
+             <a href="#">Video API</a>
+           </li>
+           <li>
+             <a href="#">Livescore Widget</a>
+           </li>
+         </ul>
+         <p class="copy-right">All Rights Reserved © 2014-2022</p>
+       </div>
+     </div>
+   </div>
+ </footer>
+ <!-- /.footer -->
+ <!-- JAVASCRIPT-->
+ <script src="js/jquery-3.3.1.min.js"></script>
+ <script src="js/jquery-ui.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+ <script src="js/main.js"></script></body>
+
+<script>
+    const FULL_DASH_ARRAY = 283;
+    const WARNING_THRESHOLD = 10;
+    const ALERT_THRESHOLD = 5;
+
+    const COLOR_CODES = {
+      info: {
+        color: "green"
+      },
+      warning: {
+        color: "orange",
+        threshold: WARNING_THRESHOLD
+      },
+      alert: {
+        color: "red",
+        threshold: ALERT_THRESHOLD
+      }
+    };
+
+    const TIME_LIMIT = 200;
+    let timePassed = 0;
+    let timeLeft = TIME_LIMIT;
+    let timerInterval = null;
+    let remainingPathColor = COLOR_CODES.info.color;
+
+    document.getElementById("progress").innerHTML = `
+<div class="base-timer">
+  <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <g class="base-timer__circle">
+      <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
+      <path
+        id="base-timer-path-remaining"
+        stroke-dasharray="283"
+        class="base-timer__path-remaining ${remainingPathColor}"
+        d="
+          M 50, 50
+          m -45, 0
+          a 45,45 0 1,0 90,0
+          a 45,45 0 1,0 -90,0
+        "
+      ></path>
+    </g>
+  </svg>
+  <span id="base-timer-label" class="base-timer__label">${formatTime(
+    timeLeft
+  )}</span>
+</div>
+`;
+
+    startTimer();
+
+    function onTimesUp() {
+      clearInterval(timerInterval);
+    }
+
+    function startTimer() {
+      timerInterval = setInterval(() => {
+        timePassed = timePassed += 1;
+        timeLeft = TIME_LIMIT - timePassed;
+        document.getElementById("base-timer-label").innerHTML = formatTime(
+          timeLeft
+        );
+        setCircleDasharray();
+        setRemainingPathColor(timeLeft);
+
+        if (timeLeft === 0) {
+          onTimesUp();
+        }
+      }, 1000);
+    }
+
+    function formatTime(time) {
+      const minutes = Math.floor(time / 60);
+      let seconds = time % 60;
+
+      if (seconds < 10) {
+        seconds = `0${seconds}`;
+      }
+
+      return `${minutes}:${seconds}`;
+    }
+
+    function setRemainingPathColor(timeLeft) {
+      const {
+        alert,
+        warning,
+        info
+      } = COLOR_CODES;
+      if (timeLeft <= alert.threshold) {
+        document
+          .getElementById("base-timer-path-remaining")
+          .classList.remove(warning.color);
+        document
+          .getElementById("base-timer-path-remaining")
+          .classList.add(alert.color);
+      } else if (timeLeft <= warning.threshold) {
+        document
+          .getElementById("base-timer-path-remaining")
+          .classList.remove(info.color);
+        document
+          .getElementById("base-timer-path-remaining")
+          .classList.add(warning.color);
+      }
+    }
+
+    function calculateTimeFraction() {
+      const rawTimeFraction = timeLeft / TIME_LIMIT;
+      return rawTimeFraction - (1 / TIME_LIMIT) * (1 - rawTimeFraction);
+    }
+
+    function setCircleDasharray() {
+      const circleDasharray = `${(
+    calculateTimeFraction() * FULL_DASH_ARRAY
+  ).toFixed(0)} 283`;
+      document
+        .getElementById("base-timer-path-remaining")
+        .setAttribute("stroke-dasharray", circleDasharray);
+    }
+  </script>
+</html>
