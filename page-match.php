@@ -56,15 +56,16 @@
         </div>
         <!-- ========== START LIVE MATCH ============= -->
         <div class="play-match">
-          <div class="player-wrapper player-box-background">
-            <div class="box-player">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VkGzajNpNwo"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+          <div class="container">
+            <div class="player-wrapper player-box-background">
+              <div class="box-player">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VkGzajNpNwo"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
             </div>
           </div>
-
           <div class="control-wrapper">
             <div class="container control-content">
               <div class="list-server">

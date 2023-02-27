@@ -546,6 +546,10 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 			max-width: 8px;
 			display: flex;
 			justify-content: center;
+
+      @include mq(max_md) {
+        margin-right: 8px;
+      }
 		}
 	}
 
@@ -4352,15 +4356,23 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
     }
 
     .player-waring-message {
-      position: absolute;
       width: 100%;
       height: auto;
-      padding: 24px 0px;
+			position: absolute;
+      padding: 0;
       left: 0;
       bottom: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
+
+			.wrapper {
+				padding: 0px 140px;
+
+				@include mq(max_md) {
+					padding: 0;
+				}
+			}
 
       @include mq(max_md) {
         position: relative;
@@ -4370,6 +4382,21 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
         padding: 16px 12px;
       }
 
+			.message-content {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 24px 0px;
+				background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+				@include mq(max_md) {
+					max-width: 100%;
+					background: unset !important;
+					padding: 0;
+				}
+			}
+
       .message {
         font-style: normal;
         font-weight: 400;
@@ -4378,6 +4405,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
         margin-right: 6px;
         color: #fff;
         padding: 0;
+
 
         @include mq(max_md) {
           font-weight: 400;
@@ -4428,7 +4456,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
     .box-player {
       display: flex;
       flex-grow: 1;
-      max-width: 895px;
+      max-width: 100%;
       height: 100%;
       position: relative;
 
@@ -4446,9 +4474,6 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 
   }
 
-  .player-box-background {
-    background-color: #000;;
-  }
 
   .control-wrapper {
     width: 100%;
@@ -4485,6 +4510,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
         font-weight: 500;
         font-size: 16px;
         line-height: 24px;
+        border-radius: 8px;
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -4493,6 +4519,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
         border: none;
         cursor: pointer;
         color: #1A202C;
+        background-color: transparent;
         text-transform: uppercase;
         font-family: 'Poppins';
         margin-right: 12px;
@@ -4509,6 +4536,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
       .active {
         color: #fff;
         background: #007649;
+        border-radius: 8px;
       }
     }
 
@@ -4566,7 +4594,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
           text-align: center;
           background: #FFFFFF;
           box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
-
+          border-radius: 4px;
           padding: 2px 8px;
           position: absolute;
           z-index: 1;
@@ -5423,7 +5451,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   max-width: 250px;
 
   @include mq(max_md) {
-    max-width: 180px;
+    max-width: 150px;
   }
 
 }

@@ -475,6 +475,11 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: 991px) {
+  .block-club-common .club-item .score {
+    margin-right: 8px;
+  }
+}
 .block-club-common .control-block {
   padding-left: 16px;
   cursor: pointer;
@@ -3835,15 +3840,23 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   }
 }
 .main-match-page-wrapper .play-match .player-waring-message {
-  position: absolute;
   width: 100%;
   height: auto;
-  padding: 24px 0px;
+  position: absolute;
+  padding: 0;
   left: 0;
   bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.main-match-page-wrapper .play-match .player-waring-message .wrapper {
+  padding: 0px 140px;
+}
+@media only screen and (max-width: 991px) {
+  .main-match-page-wrapper .play-match .player-waring-message .wrapper {
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 991px) {
   .main-match-page-wrapper .play-match .player-waring-message {
@@ -3852,6 +3865,21 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
     left: 0;
     font-style: normal;
     padding: 16px 12px;
+  }
+}
+.main-match-page-wrapper .play-match .player-waring-message .message-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+@media only screen and (max-width: 991px) {
+  .main-match-page-wrapper .play-match .player-waring-message .message-content {
+    max-width: 100%;
+    background: unset !important;
+    padding: 0;
   }
 }
 .main-match-page-wrapper .play-match .player-waring-message .message {
@@ -3912,7 +3940,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 .main-match-page-wrapper .player-wrapper .box-player {
   display: flex;
   flex-grow: 1;
-  max-width: 895px;
+  max-width: 100%;
   height: 100%;
   position: relative;
 }
@@ -3926,9 +3954,6 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 .main-match-page-wrapper .player-wrapper .box-player iframe {
   width: 100%;
   height: 100%;
-}
-.main-match-page-wrapper .player-box-background {
-  background-color: #000;
 }
 .main-match-page-wrapper .control-wrapper {
   width: 100%;
@@ -3966,6 +3991,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  border-radius: 8px;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -3974,6 +4000,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   border: none;
   cursor: pointer;
   color: #1A202C;
+  background-color: transparent;
   text-transform: uppercase;
   font-family: "Poppins";
   margin-right: 12px;
@@ -3987,6 +4014,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 .main-match-page-wrapper .control-wrapper .list-server .active {
   color: #fff;
   background: #007649;
+  border-radius: 8px;
 }
 .main-match-page-wrapper .control-wrapper .list-contact {
   display: flex;
@@ -4037,6 +4065,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   background: #FFFFFF;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   padding: 2px 8px;
   position: absolute;
   z-index: 1;
@@ -4773,7 +4802,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 }
 @media only screen and (max-width: 991px) {
   .macth-text-overflow-club {
-    max-width: 180px;
+    max-width: 150px;
   }
 }
 
