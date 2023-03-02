@@ -10,6 +10,11 @@
 
 
 // =======START STYLE COMMON ========
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;;
+}
 p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -554,29 +559,11 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 	}
 
 	.control-block {
-		padding-left:  16px;
+		padding-left:  8px;
 		cursor: pointer;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-
-    .btn-view {
-      max-width: max-content;
-      min-width: max-content;
-      text-align: center;
-      border: none;
-      background: #007649;
-      padding: 8px 16px;
-      cursor: pointer;
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 17px;
-      color: #FFFFFF;
-    }
-
-		&:hover {}
 	}
 
 	.text-overflow-club {
@@ -588,6 +575,22 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 			max-width: 160px;
 		}
 	}
+}
+
+.btn-view {
+	max-width: max-content;
+	min-width: max-content;
+	text-align: center;
+	border: none;
+	background: #007649;
+	padding: 8px 16px;
+	cursor: pointer;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
 }
 
 // ============LEAGUE TABS ===============
@@ -3873,7 +3876,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 	}
 
 	.left-column {
-		width: 40%;
+		width: 20%;
 		display: flex;
 		align-items: flex-start;
     flex-direction: column-reverse;
@@ -3889,8 +3892,24 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 	}
 
 	.right-column {
-		width: 60%;
+		width: 80%;
 		display: flex;
+		justify-content: center;
+
+		.list-club-wrapper {
+			width: 90%;
+			display: flex;
+		  justify-content: center;
+		}
+
+		.match-control {
+			width: 10%;
+			min-width: max-content;
+			margin-left: 8px;
+			display: flex;
+			justify-content: flex-end;
+
+		}
 
 		@include mq(max_md) {
 			width: 100%;
@@ -3898,19 +3917,30 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 		}
 
 	}
-
 	.time-wrapper {
-    min-width: 60px;
-    max-width: 60px;
+    width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 
-		@include mq(max_md) {
-			margin-right: 0;
-			min-width: 60px;
-			max-width: 60px;
+
+		.match-hour {
+			width: 20%;
+			min-width: max-content;
 		}
+
+		.match-date {
+			width: 70%;
+			color: #A0AEC0;
+			display: flex;
+			justify-content: center;
+		}
+
+		.match-sign {
+		   width: 10%;
+			text-transform: uppercase;
+		}
+
 	}
 
 	.time {
@@ -3956,7 +3986,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
     max-width: 100%;
 
     @include mq(max_md) {
-      max-width: 280px;
+      max-width: 200px;
     }
 	}
 
@@ -3969,17 +3999,6 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 		}
 	}
 
-	.icon-box {
-		width: 24px;
-		height: 24px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		@include mq(max_md) {
-			margin-left: 8px;
-		}
-	}
 
 	.list-club-wrapper {
 		flex-grow: 1;
@@ -4031,7 +4050,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 		max-width: 150px;
 
 		@include mq(max_md) {
-			max-width: 250px;
+			max-width: 200px;
 		}
 	}
 
@@ -4163,8 +4182,6 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   padding: 16px 0px;
 
   @include mq(max_md) {
-    padding: 12px 0px;
-
     .container {
       padding: 0 !important;
       margin: unset !important;
@@ -4488,6 +4505,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
     padding: 6px 16px;
     max-width: 100%;
     margin: auto;
+		overflow: hidden;
 
     @media only screen and (max-width: 1500px) {
       max-width: 100%;
@@ -4711,7 +4729,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
       width: 100%;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
 
       @include mq(max_md) {
         flex-direction: column;
@@ -4732,7 +4750,6 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
         align-items: flex-start;
         display: flex;
         flex-direction: column;
-				margin-right: 24px;
 
         &:last-of-type {
           margin-right: 0;
@@ -4753,7 +4770,6 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
           border-bottom: 1px solid #EDF2F7;
           flex-direction: row;
           align-items: center;
-					margin-right: 0;
 
           &:last-of-type {
             margin-bottom: 0;
@@ -5010,6 +5026,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   /* Gray:300 */
 
   border: 1px solid #E2E8F0;
+  max-width: 100%;
 
 
   @include mq(max_md) {
@@ -5453,7 +5470,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   max-width: 250px;
 
   @include mq(max_md) {
-    max-width: 150px;
+    max-width: 120px;
   }
 
 }
@@ -6701,4 +6718,10 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   @include mq(max_md) {
     padding-right: 0 !important;
   }
+}
+
+#timer {
+	@include mq(max_md) {
+		min-width: max-content;
+	}
 }

@@ -1,3 +1,9 @@
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -481,13 +487,24 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   }
 }
 .block-club-common .control-block {
-  padding-left: 16px;
+  padding-left: 8px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.block-club-common .control-block .btn-view {
+.block-club-common .text-overflow-club {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media only screen and (max-width: 991px) {
+  .block-club-common .text-overflow-club {
+    max-width: 160px;
+  }
+}
+
+.btn-view {
   max-width: max-content;
   min-width: max-content;
   text-align: center;
@@ -501,16 +518,6 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
-}
-.block-club-common .text-overflow-club {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-@media only screen and (max-width: 991px) {
-  .block-club-common .text-overflow-club {
-    max-width: 160px;
-  }
 }
 
 .league-nav {
@@ -3388,7 +3395,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   }
 }
 .common-home-league-table .left-column {
-  width: 40%;
+  width: 20%;
   display: flex;
   align-items: flex-start;
   flex-direction: column-reverse;
@@ -3402,8 +3409,21 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   }
 }
 .common-home-league-table .right-column {
-  width: 60%;
+  width: 80%;
   display: flex;
+  justify-content: center;
+}
+.common-home-league-table .right-column .list-club-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.common-home-league-table .right-column .match-control {
+  width: 10%;
+  min-width: max-content;
+  margin-left: 8px;
+  display: flex;
+  justify-content: flex-end;
 }
 @media only screen and (max-width: 991px) {
   .common-home-league-table .right-column {
@@ -3412,18 +3432,24 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   }
 }
 .common-home-league-table .time-wrapper {
-  min-width: 60px;
-  max-width: 60px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-@media only screen and (max-width: 991px) {
-  .common-home-league-table .time-wrapper {
-    margin-right: 0;
-    min-width: 60px;
-    max-width: 60px;
-  }
+.common-home-league-table .time-wrapper .match-hour {
+  width: 20%;
+  min-width: max-content;
+}
+.common-home-league-table .time-wrapper .match-date {
+  width: 70%;
+  color: #A0AEC0;
+  display: flex;
+  justify-content: center;
+}
+.common-home-league-table .time-wrapper .match-sign {
+  width: 10%;
+  text-transform: uppercase;
 }
 .common-home-league-table .time {
   display: flex;
@@ -3466,7 +3492,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 }
 @media only screen and (max-width: 991px) {
   .common-home-league-table .league-name {
-    max-width: 280px;
+    max-width: 200px;
   }
 }
 .common-home-league-table .list-club-wrapper {
@@ -3476,18 +3502,6 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 991px) {
   .common-home-league-table .list-club-wrapper {
     padding: 0;
-  }
-}
-.common-home-league-table .icon-box {
-  width: 24px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media only screen and (max-width: 991px) {
-  .common-home-league-table .icon-box {
-    margin-left: 8px;
   }
 }
 .common-home-league-table .list-club-wrapper {
@@ -3540,7 +3554,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 }
 @media only screen and (max-width: 991px) {
   .common-home-league-table .club-name {
-    max-width: 250px;
+    max-width: 200px;
   }
 }
 .common-home-league-table .club-1 {
@@ -3663,9 +3677,6 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   padding: 16px 0px;
 }
 @media only screen and (max-width: 991px) {
-  .main-match-page-wrapper {
-    padding: 12px 0px;
-  }
   .main-match-page-wrapper .container {
     padding: 0 !important;
     margin: unset !important;
@@ -3967,6 +3978,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   padding: 6px 16px;
   max-width: 100%;
   margin: auto;
+  overflow: hidden;
 }
 @media only screen and (max-width: 1500px) {
   .main-match-page-wrapper .control-wrapper {
@@ -4168,7 +4180,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 991px) {
   .match-plan-wrapper .match-plan-content .list-match-plan {
@@ -4191,7 +4203,6 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  margin-right: 24px;
 }
 .match-plan-wrapper .match-plan-content .list-match-plan .plan-item:last-of-type {
   margin-right: 0;
@@ -4211,7 +4222,6 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #EDF2F7;
     flex-direction: row;
     align-items: center;
-    margin-right: 0;
   }
   .match-plan-wrapper .match-plan-content .list-match-plan .plan-item:last-of-type {
     margin-bottom: 0;
@@ -4436,6 +4446,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   background: #FFFFFF;
   /* Gray:300 */
   border: 1px solid #E2E8F0;
+  max-width: 100%;
 }
 @media only screen and (max-width: 991px) {
   .main-content-match-page {
@@ -4804,7 +4815,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 }
 @media only screen and (max-width: 991px) {
   .macth-text-overflow-club {
-    max-width: 150px;
+    max-width: 120px;
   }
 }
 
@@ -6028,6 +6039,12 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 991px) {
   .list-club-wrapper {
     padding-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #timer {
+    min-width: max-content;
   }
 }
 
