@@ -4186,7 +4186,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media only screen and (max-width: 991px) {
   .match-plan-wrapper .match-plan-content .list-match-plan {
@@ -4209,6 +4209,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+  margin-right: 24px;
 }
 .match-plan-wrapper .match-plan-content .list-match-plan .plan-item:last-of-type {
   margin-right: 0;
