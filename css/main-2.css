@@ -674,4 +674,140 @@
   outline: none;
 }
 
+.main-header {
+  position: relative;
+}
+
+.sub-menu-mb {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  top: 65px;
+  z-index: 99999;
+  background-color: #f5f5f5;
+}
+
+.header-right-button {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .header-right-button .main-nav {
+    display: none !important;
+  }
+}
+.header-right-button .navbar-toggle {
+  display: none;
+  cursor: pointer;
+  z-index: 99999;
+}
+@media only screen and (max-width: 991px) {
+  .header-right-button .navbar-toggle {
+    display: block;
+  }
+}
+.header-right-button .navbar-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.header-right-button .navbar-toggle.active span:first-child {
+  transform: translateY(6px) rotate(45deg);
+}
+.header-right-button .navbar-toggle.active span:last-child {
+  transform: translateY(-6px) rotate(-45deg);
+}
+.header-right-button .navbar-toggle span {
+  display: block;
+  height: 2px;
+  width: 24px;
+  margin-bottom: 4px;
+  background-color: #fff;
+}
+
+.sub-menu-mb {
+  padding: 16px;
+  display: none;
+}
+.sub-menu-mb .list-authen-mb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.sub-menu-mb .btn {
+  padding: 7px 8px;
+  border: none;
+  min-width: max-content;
+  width: 100%;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  margin-right: 12px;
+}
+.sub-menu-mb .btn:last-of-type {
+  margin-right: 0;
+}
+.sub-menu-mb .btn-signin {
+  background: #007649;
+  border-radius: 4px;
+  border: 1px solid #007649;
+  color: #fff;
+}
+.sub-menu-mb .btn-signup {
+  background: #ffffff;
+  border: 1px solid #007649;
+  color: #007649;
+}
+.sub-menu-mb .list-league {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sub-menu-mb .list-league .league-image {
+  min-width: 32px;
+  max-width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.sub-menu-mb .list-league .fire-icon {
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+  margin-left: 4px;
+}
+.sub-menu-mb .list-league .league-name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: rgba(17, 17, 17, 0.95);
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sub-menu-mb .league-item-for-mb {
+  width: calc((100% - 16px) / 2);
+  height: auto;
+  background: #ffffff;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 16px;
+  padding: 11px;
+  display: flex;
+  align-items: center;
+}
+.sub-menu-mb.active {
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=main-2.css.map */

@@ -39,4 +39,11 @@ $(document).ready(function() {
         hidePopup();
       }
     });
+
+    $(".navbar-toggle").on("click", function () {
+      $(this).toggleClass("active");
+      $(".sub-menu-mb").toggleClass("active");
+    });
+
+
 });

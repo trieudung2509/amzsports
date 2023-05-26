@@ -3987,6 +3987,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 
     @include mq(max_md) {
       max-width: 200px;
+			padding-left: 8px;
     }
 	}
 
@@ -6724,4 +6725,164 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 	@include mq(max_md) {
 		min-width: max-content;
 	}
+}
+
+.live-banner-wrapper {
+  width: 100%;
+  margin: 20px 0px 24px;
+
+  @include mq(max_md) {
+    margin: 0;
+    background-color: #fff;
+    padding: 16px;
+  }
+
+  .live-banner-content {
+    background: #034f76;
+    border-radius: 8px;
+    padding: 12px 16px 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+
+    @include mq(max_md) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-size: 14px;
+    }
+
+    .btn-buy-now {
+      padding: 7px 32px;
+      background: #f1516e;
+      border-radius: 8px;
+      border: none;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height */
+
+      color: #ffffff;
+    }
+    .left-content {
+      display: flex;
+      align-items: center;
+
+      @include mq(max_md) {
+        flex-direction: column;
+        margin-bottom: 12p;
+      }
+
+      .price-info-wrapper {
+        display: flex;
+        align-items: center;
+
+        @include mq(max_md) {
+          width: 100%;
+          margin-bottom: 4px;
+        }
+      }
+
+      .highlight {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        color: #f1516e;
+        margin: 0px 6px;
+
+        @include mq(max_md) {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+
+          color: #ffffff;
+        }
+      }
+       .bold {
+          margin: 0px 4px;
+          @include mq(max_md) {
+            font-weight: bold;
+          }
+        }
+
+      .label {
+        min-width: max-content;
+      }
+
+      .description {
+        display: flex;
+        align-items: center;
+        @include mq(max_md) {
+          flex-wrap: wrap;
+        }
+      }
+      .price-wrapper {
+        display: flex;
+        align-items: center;
+        padding: 7px 14px;
+        background: #f7fafc;
+        border-radius: 1000px;
+        margin: 0px 8px;
+        max-height: 38px;
+
+        .price {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 48px;
+          /* identical to box height */
+
+          display: flex;
+          align-items: center;
+
+          color: #f1516e;
+          margin-right: 4px;
+        }
+
+        .month {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          /* identical to box height */
+
+          display: flex;
+          align-items: center;
+
+          color: #034f76;
+        }
+      }
+    }
+
+    .right-content {
+      @include mq(max_md) {
+        display: flex;
+        margin-top: 16px;
+        justify-content: flex-end;
+        width: 100%;
+      }
+    }
+  }
 }
