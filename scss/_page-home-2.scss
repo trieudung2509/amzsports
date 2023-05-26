@@ -11,6 +11,12 @@
 	border-radius: 8px;
 }
 
+@mixin button-header {
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 0px;
+}
+
 @mixin style-font($size, $color, $weight) {
 		font-size: $size;
 		color: $color;
@@ -664,5 +670,156 @@
         outline: none;
       }
     }
+  }
+}
+
+.main-header {
+  position: relative;
+}
+
+.sub-menu-mb {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  top: 65px;
+  z-index: 99999;
+  background-color: #f5f5f5;;
+}
+
+.header-right-button {
+  display: flex;
+  align-items: center;
+
+  .main-nav {
+    @include mq(max_md) {
+      display: none !important;
+    }
+  }
+
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+    z-index: 99999;
+
+    @include mq(max_md) {
+      display: block;
+    }
+
+    &.active {
+      span:nth-child(2) {
+        opacity: 0;
+      }
+      span:first-child {
+        transform: translateY(6px) rotate(45deg);
+      }
+      span:last-child {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+    }
+  }
+
+  .navbar-toggle span {
+    display: block;
+    height: 2px;
+    width: 24px;
+    margin-bottom: 4px;
+    background-color: #fff;
+  }
+}
+
+.sub-menu-mb {
+  padding: 16px;
+  display: none;
+
+  .list-authen-mb {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .btn {
+    padding: 7px 8px;
+    border: none;
+    min-width: max-content;
+    width: 100%;
+
+    font-family: "Poppins";
+
+    border-radius: 4px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    margin-right: 12px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .btn-signin {
+    background: #007649;
+    border-radius: 4px;
+    border: 1px solid #007649;
+    color: #fff;
+  }
+
+  .btn-signup {
+    background: #ffffff;
+    border: 1px solid #007649;
+    color: #007649;
+  }
+  .list-league {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .league-image {
+      min-width: 32px;
+      max-width: 32px;
+      height: 32px;
+      border: none;
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+
+    .fire-icon {
+      min-width: 24px;
+      max-width: 24px;
+      height: 24px;
+      margin-left: 4px;
+    }
+
+    .league-name {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+      color: rgba(17, 17, 17, 0.95);
+      max-width: 100px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .league-item-for-mb {
+    width: calc((100% - 16px) / 2);
+    height: auto;
+    background: #ffffff;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 16px;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+  }
+
+  &.active {
+    display: flex;
+    flex-direction: column;
   }
 }
