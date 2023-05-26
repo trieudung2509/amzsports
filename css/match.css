@@ -3451,6 +3451,11 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   width: 10%;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 991px) {
+  .common-home-league-table .time-wrapper {
+    max-width: 150px;
+  }
+}
 .common-home-league-table .time {
   display: flex;
   flex-direction: column;
@@ -3493,7 +3498,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 991px) {
   .common-home-league-table .league-name {
     max-width: 200px;
-    padding-left: 8px;
+    padding-left: 12px;
   }
 }
 .common-home-league-table .list-club-wrapper {
@@ -3979,7 +3984,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   padding: 6px 16px;
   max-width: 100%;
   margin: auto;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 @media only screen and (max-width: 1500px) {
   .main-match-page-wrapper .control-wrapper {
@@ -4181,7 +4186,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media only screen and (max-width: 991px) {
   .match-plan-wrapper .match-plan-content .list-match-plan {
@@ -4204,6 +4209,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+  margin-right: 24px;
 }
 .match-plan-wrapper .match-plan-content .list-match-plan .plan-item:last-of-type {
   margin-right: 0;
@@ -5115,7 +5121,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   width: 48px;
   height: 524px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
@@ -5126,8 +5132,40 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
   }
 }
+.visual-match-wrapper .visual-club-wrapper .visual-club-1 .value {
+  position: absolute;
+  min-width: max-content;
+  left: 100%;
+  top: 25%;
+  font-size: 12px;
+  border-radius: 2px;
+  color: #111;
+  background-color: #0dc66d;
+  padding: 2px 4px;
+}
+@media only screen and (max-width: 991px) {
+  .visual-match-wrapper .visual-club-wrapper .visual-club-1 .value {
+    display: none;
+  }
+}
 .visual-match-wrapper .visual-club-wrapper .visual-club-2 {
   flex-direction: row-reverse;
+}
+.visual-match-wrapper .visual-club-wrapper .visual-club-2 .value {
+  position: absolute;
+  min-width: max-content;
+  right: 100%;
+  top: 25%;
+  font-size: 12px;
+  border-radius: 2px;
+  color: #111;
+  background-color: #0dc66d;
+  padding: 2px 4px;
+}
+@media only screen and (max-width: 991px) {
+  .visual-match-wrapper .visual-club-wrapper .visual-club-2 .value {
+    display: none;
+  }
 }
 @media only screen and (max-width: 991px) {
   .visual-match-wrapper .visual-club-wrapper .visual-club-2 {
@@ -5139,6 +5177,27 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+.visual-match-wrapper .visual-club-wrapper .player-wrapper .list-card {
+  width: 100%;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 991px) {
+  .visual-match-wrapper .visual-club-wrapper .player-wrapper .list-card {
+    display: none;
+  }
+}
+.visual-match-wrapper .visual-club-wrapper .player-wrapper .list-card .card-item {
+  min-width: 12px;
+  max-width: 12px;
+  margin-right: 4px;
 }
 .visual-match-wrapper .visual-club-wrapper .player-wrapper .number {
   width: 32px;

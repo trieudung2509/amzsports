@@ -3941,6 +3941,10 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 			text-transform: uppercase;
 		}
 
+		@include mq(max_md) {
+			max-width: 150px;
+		}
+
 	}
 
 	.time {
@@ -3987,7 +3991,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
 
     @include mq(max_md) {
       max-width: 200px;
-			padding-left: 8px;
+			padding-left: 12px;
     }
 	}
 
@@ -4506,7 +4510,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
     padding: 6px 16px;
     max-width: 100%;
     margin: auto;
-		overflow: hidden;
+		overflow: hidden !important;
 
     @media only screen and (max-width: 1500px) {
       max-width: 100%;
@@ -4730,7 +4734,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
       width: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
 
       @include mq(max_md) {
         flex-direction: column;
@@ -4751,6 +4755,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
         align-items: flex-start;
         display: flex;
         flex-direction: column;
+				margin-right: 24px;
 
         &:last-of-type {
           margin-right: 0;
@@ -5816,7 +5821,7 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
       width: 48px;
       height: 524px;
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
 
@@ -5827,9 +5832,39 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
       }
     }
 
+			.visual-club-1 {
+				.value {
+					position: absolute;
+					min-width: max-content;
+					left: 100%;
+					top: 25%;
+					font-size: 12px;
+					border-radius: 2px;
+					color: #111;
+					background-color: #0dc66d;
+					padding: 2px 4px;
+					@include mq(max_md) {
+						display: none;
+					}
+				}
+		}
 
     .visual-club-2 {
       flex-direction: row-reverse;
+				.value {
+				position: absolute;
+				min-width: max-content;
+				right: 100%;
+				top: 25%;
+				font-size: 12px;
+				border-radius: 2px;
+				color: #111;
+				background-color: #0dc66d;
+				padding: 2px 4px;
+				@include mq(max_md) {
+					display: none;
+				}
+			}
       @include mq(max_md) {
         flex-direction: column-reverse;
       }
@@ -5840,6 +5875,28 @@ p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+			position: relative;
+		  width: fit-content;
+			height: fit-content;
+
+			.list-card {
+				width: 100%;
+				position: absolute;
+				bottom: 100%;
+				left: 0;
+				display: flex;
+				justify-content: center;
+
+				@include mq(max_md) {
+					display: none;
+				}
+
+				.card-item {
+					min-width: 12px;
+					max-width: 12px;
+					margin-right: 4px;
+				}
+			}
 
       .number {
         width: 32px;
